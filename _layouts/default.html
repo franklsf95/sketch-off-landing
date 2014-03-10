@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>SketchOff - Build your friends' social profiles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Flip the social perspective: tell your friends' stories, and let them tell yours.">
+        <meta name="keywords" content="SketchOff, social network, lean, profile, sketch, tag, radar, friends, insight, instantly">
+        <meta name="author" content="2014 SketchOff">
+
+        <link rel="shortcut icon" href="/img/sketch_off_logo.png">
+        <link href="//fonts.googleapis.com/css?family=Josefin+Sans:400,300,700|Sail" rel="stylesheet" type="text/css">
+        <link href="/assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="/assets/css/style.css" rel="stylesheet" />
+        <link href="/assets/css/select2.css" rel="stylesheet" />
+    </head>
+    <body>
+        {% include navbar.html %}
+        <div class="body-container">
+            {{ content }}
+        </div>
+        {% include footer.html %}
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        {% for js in page.scripts %}
+          <script src="/assets/js/{{ js }}.js"></script>
+        {% endfor %}
+        <script>
+        $('#nav-{{ mixture.url }}').addClass('active');
+        $('.select2').select2({placeholder: "Select a State", allowClear: true});
+        </script>
+    </body>
+</html>

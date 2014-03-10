@@ -1,0 +1,6 @@
+name: SketchOff
+exclude:
+ - Gemfile
+ - Gemfile.lock
+ - Guardfile
+ - README.md

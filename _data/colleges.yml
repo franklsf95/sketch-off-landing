@@ -1,0 +1,344 @@
+- code: 0
+  name: (not in college)
+- code: 76
+  name: American University
+- code: 1002
+  name: Amherst College
+- code: 88
+  name: Auburn University
+- code: 1036
+  name: Bard College
+- code: 1028
+  name: Barnard College
+- code: 1022
+  name: Bates College
+- code: 77
+  name: Baylor University
+- code: 89
+  name: Binghamton University--SUNY
+- code: 31
+  name: Boston College
+- code: 51
+  name: Boston University
+- code: 1006
+  name: Bowdoin College
+- code: 33
+  name: Brandeis University
+- code: 67
+  name: Brigham Young University--Provo
+- code: 15
+  name: Brown University
+- code: 1026
+  name: Bryn Mawr College
+- code: 1032
+  name: Bucknell University
+- code: 1804
+  name: California College of the Arts
+- code: 10
+  name: California Institute of Technology
+- code: 1008
+  name: Carleton College
+- code: 23
+  name: Carnegie Mellon University
+- code: 37
+  name: Case Western Reserve University
+- code: 1010
+  name: Claremont McKenna College
+- code: 82
+  name: Clark University
+- code: 68
+  name: Clemson University
+- code: 1018
+  name: Colby College
+- code: 1019
+  name: Colgate University
+- code: 34
+  name: College of William and Mary
+- code: 1033
+  name: College of the Holy Cross
+- code: 1029
+  name: Colorado College
+- code: 78
+  name: Colorado School of Mines
+- code: 4
+  name: Columbia University
+- code: 1041
+  name: Connecticut College
+- code: 1805
+  name: Cooper Union
+- code: 16
+  name: Cornell University
+- code: 11
+  name: Dartmouth College
+- code: 1012
+  name: Davidson College
+- code: 1049
+  name: Denison University
+- code: 103
+  name: DePaul University
+- code: 1046
+  name: Dickinson College
+- code: 83
+  name: Drexel University
+- code: 8
+  name: Duke University
+- code: 20
+  name: Emory University
+- code: 96
+  name: Florida State University
+- code: 57
+  name: Fordham University
+- code: 1047
+  name: Franklin and Marshall College
+- code: 1050
+  name: Furman University
+- code: 21
+  name: Georgetown University
+- code: 36
+  name: Georgia Institute of Technology
+- code: 1048
+  name: Gettysburg College
+- code: 1023
+  name: Grinnell College
+- code: 1016
+  name: Hamilton College
+- code: 1
+  name: Harvard University
+- code: 1013
+  name: Harvey Mudd College
+- code: 1009
+  name: Haverford College
+- code: 3005
+  name: Hong Kong Baptist University
+- code: 101
+  name: Illinois Institute of Technology
+- code: 84
+  name: Indiana University--Bloomington
+- code: 100
+  name: Iowa State University
+- code: 13
+  name: Johns Hopkins University
+- code: 1034
+  name: Kenyon College
+- code: 1039
+  name: Lafayette College
+- code: 38
+  name: Lehigh University
+- code: 1024
+  name: Macalester College
+- code: 85
+  name: Marquette University
+- code: 6
+  name: Massachusetts Institute of Technology
+- code: 2003
+  name: McGill University
+- code: 90
+  name: Miami University--Oxford
+- code: 71
+  name: Michigan State University
+- code: 1004
+  name: Middlebury College
+- code: 1035
+  name: Mount Holyoke College
+- code: 32
+  name: New York University
+- code: 55
+  name: Northeastern University
+- code: 12
+  name: Northwestern University
+- code: 1027
+  name: Oberlin College
+- code: 1040
+  name: Occidental College
+- code: 56
+  name: Ohio State University--Columbus
+- code: 1801
+  name: Parsons The New School for Design
+- code: 4001
+  name: Peking University
+- code: 46
+  name: Pennsylvania State University--University Park
+- code: 53
+  name: Pepperdine University
+- code: 1043
+  name: Pitzer College
+- code: 1005
+  name: Pomona College
+- code: 2
+  name: Princeton University
+- code: 64
+  name: Purdue University--West Lafayette
+- code: 2006
+  name: Queen's University
+- code: 41
+  name: Rensselaer Polytechnic Institute
+- code: 1803
+  name: Rhode Island School of Design
+- code: 17
+  name: Rice University
+- code: 69
+  name: Rutgers the State University of New Jersey--New Brunswick
+- code: 79
+  name: SUNY College of Environmental Science and Forestry
+- code: 1802
+  name: School of the Art Institute of Chicago
+- code: 1025
+  name: Scripps College
+- code: 1037
+  name: Sewanee--University of the South
+- code: 1044
+  name: Skidmore College
+- code: 1020
+  name: Smith College
+- code: 58
+  name: Southern Methodist University
+- code: 91
+  name: St. Louis University
+- code: 7
+  name: Stanford University
+- code: 74
+  name: Stevens Institute of Technology
+- code: 92
+  name: Stony Brook University--SUNY
+- code: 1003
+  name: Swarthmore College
+- code: 59
+  name: Syracuse University
+- code: 65
+  name: Texas A&amp;M University--College Station
+- code: 93
+  name: Texas Christian University
+- code: 3004
+  name: The Chinese University of Hong Kong
+- code: 3003
+  name: The Hong Kong Polytechnic University
+- code: 3002
+  name: The Hong Kong University of Science &amp; Technology
+- code: 3001
+  name: The University of Hong Kong
+- code: 1038
+  name: Trinity College
+- code: 4002
+  name: Tsinghua University
+- code: 28
+  name: Tufts University
+- code: 52
+  name: Tulane University
+- code: 1042
+  name: Union College
+- code: 1031
+  name: United States Air Force Academy
+- code: 1021
+  name: United States Military Academy
+- code: 1014
+  name: United States Naval Academy
+- code: 80
+  name: University of Alabama
+- code: 2002
+  name: University of British Columbia
+- code: 22
+  name: University of California--Berkeley
+- code: 39
+  name: University of California--Davis
+- code: 44
+  name: University of California--Irvine
+- code: 24
+  name: University of California--Los Angeles
+- code: 40
+  name: University of California--San Diego
+- code: 42
+  name: University of California--Santa Barbara
+- code: 81
+  name: University of California--Santa Cruz
+- code: 5
+  name: University of Chicago
+- code: 97
+  name: University of Colorado--Boulder
+- code: 62
+  name: University of Connecticut
+- code: 75
+  name: University of Delaware
+- code: 86
+  name: University of Denver
+- code: 54
+  name: University of Florida
+- code: 63
+  name: University of Georgia
+- code: 102
+  name: University of Illinois at Chicago
+- code: 47
+  name: University of Illinois--Urbana-Champaign
+- code: 72
+  name: University of Iowa
+- code: 60
+  name: University of Maryland--College Park
+- code: 98
+  name: University of Massachusetts--Amherst
+- code: 45
+  name: University of Miami
+- code: 29
+  name: University of Michigan--Ann Arbor
+- code: 70
+  name: University of Minnesota--Twin Cities
+- code: 99
+  name: University of Missouri
+- code: 2004
+  name: University of Montreal
+- code: 30
+  name: University of North Carolina--Chapel Hill
+- code: 18
+  name: University of Notre Dame
+- code: 9
+  name: University of Pennsylvania
+- code: 61
+  name: University of Pittsburgh
+- code: 1030
+  name: University of Richmond
+- code: 35
+  name: University of Rochester
+- code: 94
+  name: University of San Diego
+- code: 25
+  name: University of Southern California
+- code: 48
+  name: University of Texas--Austin
+- code: 2001
+  name: University of Toronto
+- code: 87
+  name: University of Tulsa
+- code: 95
+  name: University of Vermont
+- code: 26
+  name: University of Virginia
+- code: 49
+  name: University of Washington
+- code: 2005
+  name: University of Waterloo
+- code: 43
+  name: University of Wisconsin--Madison
+- code: 19
+  name: Vanderbilt University
+- code: 1011
+  name: Vassar College
+- code: 73
+  name: Virginia Tech
+- code: 27
+  name: Wake Forest University
+- code: 14
+  name: Washington University in St. Louis
+- code: 1015
+  name: Washington and Lee University
+- code: 1007
+  name: Wellesley College
+- code: 1017
+  name: Wesleyan University
+- code: 1045
+  name: Whitman College
+- code: 1001
+  name: Williams College
+- code: 66
+  name: Worcester Polytechnic Institute
+- code: 3
+  name: Yale University
+- code: 50
+  name: Yeshiva University
