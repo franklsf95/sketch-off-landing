@@ -5,4 +5,6 @@ group :development do
 
   gem 'guard-sass'
   gem 'guard-coffeescript'
+
+  gem 'guard-livereload'
 end

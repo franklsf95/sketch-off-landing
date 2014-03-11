@@ -9,22 +9,17 @@ $cy: #eec33e;  // yellow
 $logo-size: 60px;
 $nav-height: $logo-size + 10px;
 
-.logo {
-    background: url('../img/sketch_off_logo.png') no-repeat;
-    background-size: $logo-size, $logo-size;
-    background-position: 5px 5px;
-    height: $logo-size + 5px;
-    width: $logo-size + 5px;
-    display: block;
-    margin-right: 20px;
+@mixin scr($media) {
+  @if $media == xs {
+    @media (max-width: $grid-float-breakpoint-max) { @content; }
+  }
+  @else if $media == md {
+    @media (min-width: $grid-float-breakpoint) { @content; }
+  }
 }
 
 .email-at:before {
     content: '\0040';
-}
-
-.brand {
-    // font-family: Pacifico, inherit;
 }
 
 .emph {
@@ -56,6 +51,34 @@ $nav-height: $logo-size + 10px;
         }
     }
 
+    .logo {
+        background: url('../img/sketch_off_logo.png') no-repeat;
+        background-size: $logo-size, $logo-size;
+        background-position: 5px 5px;
+        height: $logo-size + 5px;
+        display: block;
+        padding-left: $logo-size + 24px;
+        margin-right: 20px;
+        padding-top: 18px;
+        color: #fff;
+        font-size: 30px;
+        text-shadow: 2px 1px 2px rgba(0,0,0,0.45);
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+
+    .brand > a {
+        color: #fff;
+        font-size: 1.5em;
+        text-shadow: 2px 1px 2px rgba(0,0,0,0.45);
+        margin-left: -12px;
+        &:hover,
+        &:focus {
+            border: none;
+        }
+    }
+
     .navbar-nav {
         font-size: 20px;
         > li > a {
@@ -71,19 +94,10 @@ $nav-height: $logo-size + 10px;
         > li .active {
             border-bottom: 4px solid $c1;
         }
-        .brand > a {
-            color: #fff;
-            font-size: 1.5em;
-            text-shadow: 2px 1px 2px rgba(0,0,0,0.45);
-            margin-left: -12px;
-            &:hover,
-            &:focus {
-                border: none;
-            }
-        }
     }
 
     .navbar-toggle {
+        margin-top: 20px;
         border-color: $navbar-default-toggle-border-color;
         &:hover,
         &:focus {
@@ -92,6 +106,10 @@ $nav-height: $logo-size + 10px;
         .icon-bar {
             background-color: $navbar-default-toggle-icon-bar-bg;
         }
+    }
+
+    .navbar-collapse > .navbar-nav {
+        @include scr(xs) { background-color: #fff; }
     }
 }
 
@@ -112,11 +130,13 @@ $nav-height: $logo-size + 10px;
     height: 600px;
     width: 100%;
     position: relative;
+    list-style-type: none;
     // border: 1px solid #000;
     h1 {
         position: absolute;
         font-weight: 300;
-        font-size: 3.2em;
+        @include scr(md) { font-size: 54px; }
+        @include scr(xs) { font-size: 32px; top: 10px; left: 0; }
     }
     p {
         position: absolute;
@@ -127,6 +147,10 @@ $nav-height: $logo-size + 10px;
         &:after {
             content: close-quote;
         }
+        > .emph {
+            text-transform: none;
+            font-weight: 700;
+        }
     }
 }
 
@@ -136,127 +160,98 @@ $nav-height: $logo-size + 10px;
     z-index: 1;
 }
 
-.img-overlay {
-    width: 200px;
-    position: absolute;
-    z-index: 2;
-    opacity: 0.9;
-}
-
 #slide-1 {
+    @include scr(xs) { height: 780px; }
     h1 {
-        top: 300px;
-        left: 540px;
+        @include scr(md) { top: 300px; left: 540px; }
     }
     p {
-        top: 400px;
-        left: 550px;
+        @include scr(md) { top: 400px; left: 550px; }
+        @include scr(xs) { top: 120px; left: 0px; }
     }
-    > .img-mockup {
-        top: 40px;
-        left: 140px;
+    .img-mockup {
+        @include scr(md) { top: 40px; left: 140px; }
+        @include scr(xs) { top: 220px; left: 10px; }
     }
-    > .img-overlay {
-        top: 0;
-        left: 340px;
+    .img-overlay {
+        position: absolute;
+        z-index: 2;
+        opacity: 0.9;
+        @include scr(md) { top: 0; left: 340px; width: 200px; }
+        @include scr(xs) { top: 160px; left: 190px; width: 150px; }
     }
 }
 
 #slide-2 {
+    @include scr(xs) { height: 1020px; }
     h1 {
-        top: 200px;
-        left: 340px;
+        @include scr(md) { top: 200px; left: 340px; }
     }
-    > .img-mockup {
-        top: 40px;
-        &.first {
-            left: 40px;
-        }
-        &.second {
-            right: 60px;
-        }
+    .img-mockup.first {
+        @include scr(md) { top: 40px; left: 40px; }
+        @include scr(xs) { top: 80px; left: 10px; }
+    }
+    .img-mockup.second {
+        @include scr(md) { top: 40px; right: 60px; }
+        @include scr(xs) { top: 460px; left: 10px; }
     }
 }
 
 #slide-3 {
+    @include scr(xs) { height: 740px; }
     h1 {
-        top: 200px;
-        left: 100px;
-        line-height: 1.3em;
-        width: 500px;
+        @include scr(md) { top: 200px; left: 100px; line-height: 1.3em; width: 500px; }
     }
     p {
-        top: 360px;
-        left: 110px;
+        @include scr(md) { top: 360px; left: 110px; }
+        @include scr(xs) { top: 120px; left: 10px; }
     }
-    > .img-mockup {
-        &.first {
-            top: 20px;
-            right: 60px;
-        }
-        &.second {
-            top: 200px;
-            right: 270px;
-            height: 360px;
-        }
+    .img-mockup.first {
+        @include scr(md) { top: 20px; right: 60px; }
+        @include scr(xs) { top: 190px; left: 10px; }
+    }
+    .img-mockup.second {
+        @include scr(md) { top: 200px; right: 270px; height: 360px; }
+        @include scr(xs) { visibility: hidden; }
     }
 }
 
 #slide-4 {
+    @include scr(xs) { height: 840px; }
     h1 {
-        top: 180px;
-        left: 540px;
-        line-height: 1.3em;
-        width: 500px;
+        @include scr(md) { top: 180px; left: 540px; line-height: 1.3em; width: 500px; }
     }
     p {
-        top: 460px;
-        left: 540px;
-        .emph {
-            text-transform: none;
-            font-weight: 700;
-        }
+        @include scr(md) { top: 460px; left: 540px; }
+        @include scr(xs) { top: 180px; left: 10px; }
     }
-    > .img-mockup {
-        &.first {
-            top: 20px;
-            left: 60px;
-        }
-        &.second {
-            top: 160px;
-            left: 240px;
-            height: 420px;
-        }
+    .img-mockup.first {
+        @include scr(md) { top: 20px; left: 60px; }
+        @include scr(xs) { top: 280px; left: 10px; }
+    }
+    .img-mockup.second {
+        @include scr(md) { top: 160px; left: 240px; height: 420px; }
+        @include scr(xs) { visibility: hidden; }
     }
 }
 
 #slide-5 {
+    @include scr(xs) { height: 840px; }
     h1 {
-        top: 160px;
-        left: 420px;
-        font-size: 54px;
-        line-height: 1.3em;
-        width: 500px;
+        @include scr(md) { top: 160px; left: 420px; line-height: 1.3em; width: 500px;}
     }
     p {
-        top: 400px;
-        left: 420px;
-        width: 600px;
-        .emph {
-            text-transform: none;
-            font-weight: 700;
-        }
+        @include scr(md) { top: 400px; left: 420px; width: 600px; }
+        @include scr(xs) { top: 150px; left: 10px; }
     }
-    > .img-mockup {
-        &.first {
-            top: 30px;
-            left: 60px;
-        }
-        &.second {
-            top: 20px;
-            left: 200px;
-        }
+    .img-mockup.first {
+        @include scr(md) { top: 30px; left: 60px; }
+        @include scr(xs) { top: 260px; left: 10px; }
     }
+    // .img-mockup.second {
+    //     @include scr(md) { top: 20px; left: 200px; }
+    //     @include scr(xs) { visibility: hidden; }
+    // }
 }
 
 .bx-wrapper .bx-pager {
@@ -282,7 +277,9 @@ $p-radius: 8px;
 .home-container {
     height: 630px;
     background-color: lighten($c3, 10%);
-    box-shadow: 0 0 1px 1px $gray;
+    // box-shadow: 0 0 1px 1px $gray;
+    @include scr(md) { height: 630px; }
+    @include scr(xs) { height: 1000px; }
     h1 {
         position: absolute;
         left: 640px;
@@ -292,23 +289,26 @@ $p-radius: 8px;
         font-family: Sail, inherit;
         color: $c1;
         .indent {
-            text-indent: 2em;
+            @include scr(md) { text-indent: 2em; }
+            @include scr(xs) { text-indent: 0; }
         }
+        @include scr(md) { left: 640px; top: 110px; font-size: 48px; }
+        @include scr(xs) { left: 10px; top: 70px; font-size: 32px; }
     }
     .img-mockup {
         position: absolute;
-        top: 100px;
-        left: 220px;
+        @include scr(md) { left: 220px; top: 100px; }
+        @include scr(xs) { left: 10px; top: 200px; }
         &.second {
-            top: 260px;
-            left: 400px;
+            @include scr(md) { left: 400px; top: 260px; }
+            @include scr(xs) { left: 180px; top: 360px; }
             height: 400px;
         }
     }
     .sign-up-wrapper {
         position: absolute;
-        top: 320px;
-        left: 740px;
+        @include scr(md) { left: 740px; top: 320px; }
+        @include scr(xs) { left: 10px; top: 760px; }
         h4 {
             font-weight: 700;
             font-size: 32px;
@@ -357,9 +357,12 @@ $p-radius: 8px;
 
         margin: 30px 30px;
         cursor: inherit;
+        @media (max-width: $grid-float-breakpoint-max) {
+            margin: 10px 20px !important;
+        }
     }
     .indent {
-        @media (min-width: $screen-md-min) {
+        @media (min-width: $grid-float-breakpoint) {
             margin-left: 210px;
         }
     }
