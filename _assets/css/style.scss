@@ -131,7 +131,8 @@ $nav-height: $logo-size + 10px;
     width: 100%;
     position: relative;
     list-style-type: none;
-    // border: 1px solid #000;
+    border-top: 1px solid $gray-lighter;
+
     h1 {
         position: absolute;
         font-weight: 300;
@@ -246,7 +247,7 @@ $nav-height: $logo-size + 10px;
     }
     .img-mockup.first {
         @include scr(md) { top: 30px; left: 60px; }
-        @include scr(xs) { top: 260px; left: 10px; }
+        @include scr(xs) { top: 280px; left: 10px; }
     }
     // .img-mockup.second {
     //     @include scr(md) { top: 20px; left: 200px; }
