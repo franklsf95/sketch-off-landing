@@ -82,10 +82,10 @@
     font-weight: 300; }
     @media (min-width: 768px) {
       .slide-wrapper h1 {
-        font-size: 54px; } }
+        font-size: 44px; } }
     @media (max-width: 767px) {
       .slide-wrapper h1 {
-        font-size: 32px;
+        font-size: 30px;
         top: 10px;
         left: 0; } }
   .slide-wrapper p {

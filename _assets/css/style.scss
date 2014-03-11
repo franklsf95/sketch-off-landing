@@ -135,8 +135,8 @@ $nav-height: $logo-size + 10px;
     h1 {
         position: absolute;
         font-weight: 300;
-        @include scr(md) { font-size: 54px; }
-        @include scr(xs) { font-size: 32px; top: 10px; left: 0; }
+        @include scr(md) { font-size: 44px; }
+        @include scr(xs) { font-size: 30px; top: 10px; left: 0; }
     }
     p {
         position: absolute;
