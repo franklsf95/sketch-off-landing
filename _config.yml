@@ -3,4 +3,5 @@ exclude:
  - Gemfile
  - Gemfile.lock
  - Guardfile
+ - landing-v2.sublime-project
  - README.md
