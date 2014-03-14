@@ -166,9 +166,11 @@ $nav-height: $logo-size + 10px;
     }
     .sign-up-wrapper {
         @include scr(md) { position: absolute; left: 740px; top: 320px; }
+        @include scr(xs) { float: left; }
         h4 {
             font-weight: 700;
             color: $cy;
+            width: 100%;
             @include scr(md) { font-size: 32px; }
             @include scr(xs) { font-size: 28px; }
         }

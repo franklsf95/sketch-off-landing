@@ -129,9 +129,13 @@
       position: absolute;
       left: 740px;
       top: 320px; } }
+  @media (max-width: 767px) {
+    .home-container .sign-up-wrapper {
+      float: left; } }
   .home-container .sign-up-wrapper h4 {
     font-weight: 700;
-    color: #eec33e; }
+    color: #eec33e;
+    width: 100%; }
     @media (min-width: 768px) {
       .home-container .sign-up-wrapper h4 {
         font-size: 32px; } }
