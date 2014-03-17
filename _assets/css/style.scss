@@ -1,11 +1,12 @@
 @import "bootstrap/variables";
 // @import "bootstrap";
 
-$c1: #143643;
-$c2: #b5ddd8;
-$c21: #26657e;
-$c3: #cbe7e3;
-$cy: #eec33e;  // yellow
+$mint: #48CFAD;
+$mint-black: darken($mint, 40%);
+$mint-dark:  darken($mint, 20%);
+$mint-light: lighten($mint, 35%);
+$sunflower: #F6BB42;
+
 $logo-size: 60px;
 $nav-height: $logo-size + 10px;
 
@@ -33,7 +34,7 @@ $nav-height: $logo-size + 10px;
 
 .navbar {
     height: $nav-height;
-    background-color: $c3;
+    background-color: $mint-light;
     box-shadow: 0 0 3px 1px $gray-light;
     opacity: 0.9;
     font-weight: 600;
@@ -41,9 +42,9 @@ $nav-height: $logo-size + 10px;
     .navbar-header {
         height: $logo-size;
         .navbar-toggle {
-            background-color: $c1;
+            background-color: $mint-black;
             &:hover, &:focus {
-                background-color: $c1;
+                background-color: $mint-black;
             }
             .icon-bar {
                 background-color: $gray-lighter;
@@ -82,17 +83,17 @@ $nav-height: $logo-size + 10px;
     .navbar-nav {
         font-size: 20px;
         > li > a {
-            color: $c1;
+            color: $mint-black;
             padding: 30px 10px 10px 10px;
             margin: 0 10px;
             &:hover,
             &:focus {
                 background: inherit;
-                border-bottom: 4px solid $c1;
+                border-bottom: 4px solid $mint-black;
             }
         }
         > li .active {
-            border-bottom: 4px solid $c1;
+            border-bottom: 4px solid $mint-black;
         }
     }
 
@@ -138,7 +139,7 @@ $nav-height: $logo-size + 10px;
 }
 
 .home-container {
-    background-color: lighten($c3, 10%);
+    // background-color: lighten($mint-light, 10%);
     @include scr(md) { height: 630px; }
     &:after {
         clear: both;
@@ -149,7 +150,7 @@ $nav-height: $logo-size + 10px;
     h1 {
         line-height: 1.5em;
         font-family: Sail, inherit;
-        color: $c1;
+        color: $mint-black;
         .indent {
             @include scr(md) { text-indent: 2em; }
         }
@@ -169,7 +170,7 @@ $nav-height: $logo-size + 10px;
         @include scr(xs) { float: left; }
         h4 {
             font-weight: 700;
-            color: $cy;
+            color: $sunflower;
             width: 100%;
             @include scr(md) { font-size: 32px; }
             @include scr(xs) { font-size: 28px; }
@@ -181,10 +182,15 @@ $nav-height: $logo-size + 10px;
             @include scr(md) { width: 320px; }
             @include scr(xs) { width: 100%; }
             .btn {
-                background-color: $cy;
-                // color: #fff;
-                font-weight: 600;
+                background-color: $sunflower;
+                color: #fff;
+                font-weight: 400;
                 font-size: 18px;
+                &:hover,
+                &:focus,
+                &:active {
+                    background-color: lighten($sunflower, 5%);
+                }
             }
         }
         #output {
@@ -315,11 +321,11 @@ $p-radius: 8px;
     width: $p-radius * 2;
     border-radius: $p-radius;
     margin-bottom: $p-radius * 1.6;
-    border: 1px solid darken($c3, 20%);
+    border: 1px solid darken($mint-light, 20%);
     background: #fff;
 
     &:hover, &.active {
-        background: $c3;
+        background: $mint-light;
     }
 }
 
@@ -332,8 +338,8 @@ $p-radius: 8px;
         @include scr(xs) { width: 90%; margin: 10px 20px; }
         height: 100px;
         border-radius: 15px;
-        background: $c21;
-        border-color: $c1;
+        background: $mint-dark;
+        border-color: $mint-black;
 
         font-size: 24px;
         color: #fff;
@@ -350,7 +356,7 @@ $p-radius: 8px;
 
 code {
     background: $gray-lighter;
-    color: $c1;
+    color: $mint-black;
     font-size: 16px;
 }
 
@@ -371,7 +377,7 @@ code {
 
 .footer {
     height: 60px;
-    background: $c1;
+    background: $mint-black;
     color: #fff;
 
     p {

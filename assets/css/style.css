@@ -9,16 +9,16 @@
 
 .navbar {
   height: 70px;
-  background-color: #cbe7e3;
+  background-color: #d5f4ec;
   box-shadow: 0 0 3px 1px #999999;
   opacity: 0.9;
   font-weight: 600; }
   .navbar .navbar-header {
     height: 60px; }
     .navbar .navbar-header .navbar-toggle {
-      background-color: #143643; }
+      background-color: #103b30; }
       .navbar .navbar-header .navbar-toggle:hover, .navbar .navbar-header .navbar-toggle:focus {
-        background-color: #143643; }
+        background-color: #103b30; }
       .navbar .navbar-header .navbar-toggle .icon-bar {
         background-color: #eeeeee; }
   .navbar .logo {
@@ -45,14 +45,14 @@
   .navbar .navbar-nav {
     font-size: 20px; }
     .navbar .navbar-nav > li > a {
-      color: #143643;
+      color: #103b30;
       padding: 30px 10px 10px 10px;
       margin: 0 10px; }
       .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
         background: inherit;
-        border-bottom: 4px solid #143643; }
+        border-bottom: 4px solid #103b30; }
     .navbar .navbar-nav > li .active {
-      border-bottom: 4px solid #143643; }
+      border-bottom: 4px solid #103b30; }
   .navbar .navbar-toggle {
     margin-top: 20px;
     border-color: #dddddd; }
@@ -86,7 +86,6 @@
   .img-mockup {
     float: left; } }
 .home-container {
-  background-color: #eef7f6;
   padding-bottom: 20px; }
   @media (min-width: 768px) {
     .home-container {
@@ -98,7 +97,7 @@
   .home-container h1 {
     line-height: 1.5em;
     font-family: Sail, inherit;
-    color: #143643; }
+    color: #103b30; }
     @media (min-width: 768px) {
       .home-container h1 .indent {
         text-indent: 2em; } }
@@ -134,7 +133,7 @@
       float: left; } }
   .home-container .sign-up-wrapper h4 {
     font-weight: 700;
-    color: #eec33e;
+    color: #f6bb42;
     width: 100%; }
     @media (min-width: 768px) {
       .home-container .sign-up-wrapper h4 {
@@ -151,9 +150,12 @@
     .home-container .sign-up-wrapper form {
       width: 100%; } }
   .home-container .sign-up-wrapper form .btn {
-    background-color: #eec33e;
-    font-weight: 600;
+    background-color: #f6bb42;
+    color: #fff;
+    font-weight: 400;
     font-size: 18px; }
+    .home-container .sign-up-wrapper form .btn:hover, .home-container .sign-up-wrapper form .btn:focus, .home-container .sign-up-wrapper form .btn:active {
+      background-color: #f7c45a; }
   .home-container .sign-up-wrapper #output {
     margin-top: 10px;
     font-size: 20px; }
@@ -274,18 +276,18 @@
   width: 16px;
   border-radius: 8px;
   margin-bottom: 12.8px;
-  border: 1px solid #85c7bd;
+  border: 1px solid #85dfc8;
   background: #fff; }
   .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
-    background: #cbe7e3; }
+    background: #d5f4ec; }
 
 .join-container h1 {
   margin-top: 30px; }
 .join-container .btn-job {
   height: 100px;
   border-radius: 15px;
-  background: #26657e;
-  border-color: #143643;
+  background: #258c72;
+  border-color: #103b30;
   font-size: 24px;
   color: #fff;
   cursor: inherit; }
@@ -306,7 +308,7 @@
 
 code {
   background: #eeeeee;
-  color: #143643;
+  color: #103b30;
   font-size: 16px; }
 
 .ca-wrapper {
@@ -332,7 +334,7 @@ code {
 
 .footer {
   height: 60px;
-  background: #143643;
+  background: #103b30;
   color: #fff; }
   .footer p {
     text-align: center;
