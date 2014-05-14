@@ -1,54 +1,31 @@
-# base_url = 'http://0.0.0.0:3000'
+slider = $('.bxslider').bxSlider
+    mode: 'fade'
+    controls: false
+    pager: false
+    auto: true
+    pause: 3000
+    autoHover: true
+
 base_url = 'http://inception-landing.herokuapp.com'
 $out = $('#output')
-
-submitForm = ->
-    $out.hide()
+submit = ->
+    $out.slideUp()
     $.ajax
         type: 'POST'
         url: base_url + '/submit'
         crossDomain: true
         data:
-            name: $('#input-name').val()
             email: $('#input-email').val()
-            school: $('#input-school').val()
         error: (xhr) ->
             err = $.parseJSON xhr.responseText
             if err.name == 'MongoError' and err.code == 11000
-                $out.html 'You have already subscribed!'
+                $out.html 'You have already signed up!'
             else
-                $out.html 'Error occured when subscribing.'
+                $out.html 'Error occured when signing up.'
             $out.slideDown()
         success: (xhr) ->
-            $out.html 'You have successfully signed up!'
+            $out.html 'Great! We will send you an email when we launch!'
             $out.slideDown()
 
-$ ->
-    # slider = $('.slider').bxSlider
-    #     mode: 'vertical'
-    #     controls: false
-    #     auto: true
-    # $('body').keydown (e) ->
-    #     k = e.keyCode
-    #     if k >= 37 and k <= 40
-    #         e.preventDefault()
-    #     switch (k)
-    #         when 37 then slider.goToPrevSlide()  # left
-    #         when 38 then slider.goToPrevSlide()  # up
-    #         when 39 then slider.goToNextSlide()  # right
-    #         when 40 then slider.goToNextSlide()  # down
-    $('#input-submit').click (e) ->
-        e.preventDefault()
-        submitForm()
 
-
-    # prevScrollTop = 0
-    # $(window).scroll (e) ->
-    #     e.preventDefault()
-    #     st = $(this).scrollTop()
-    #     if st - prevScrollTop > 10
-    #         slider.goToNextSlide()
-    #     else if st - prevScrollTop < -10
-    #         slider.goToPrevSlide()
-    #     prevScrollTop = st
-    #     window.scrollTo 0, 0
+$('#btn-sign-up').click -> submit()

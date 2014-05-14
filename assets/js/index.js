@@ -1,43 +1,47 @@
 (function() {
-  var $out, base_url, submitForm;
+  var $out, base_url, slider, submit;
+
+  slider = $('.bxslider').bxSlider({
+    mode: 'fade',
+    controls: false,
+    pager: false,
+    auto: true,
+    pause: 3000,
+    autoHover: true
+  });
 
   base_url = 'http://inception-landing.herokuapp.com';
 
   $out = $('#output');
 
-  submitForm = function() {
-    $out.hide();
+  submit = function() {
+    $out.slideUp();
     return $.ajax({
       type: 'POST',
       url: base_url + '/submit',
       crossDomain: true,
       data: {
-        name: $('#input-name').val(),
-        email: $('#input-email').val(),
-        school: $('#input-school').val()
+        email: $('#input-email').val()
       },
       error: function(xhr) {
         var err;
         err = $.parseJSON(xhr.responseText);
         if (err.name === 'MongoError' && err.code === 11000) {
-          $out.html('You have already subscribed!');
+          $out.html('You have already signed up!');
         } else {
-          $out.html('Error occured when subscribing.');
+          $out.html('Error occured when signing up.');
         }
         return $out.slideDown();
       },
       success: function(xhr) {
-        $out.html('You have successfully signed up!');
+        $out.html('Great! We will send you an email when we launch!');
         return $out.slideDown();
       }
     });
   };
 
-  $(function() {
-    return $('#input-submit').click(function(e) {
-      e.preventDefault();
-      return submitForm();
-    });
+  $('#btn-sign-up').click(function() {
+    return submit();
   });
 
 }).call(this);

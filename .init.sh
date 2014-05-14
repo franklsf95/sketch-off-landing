@@ -1,1 +1,1 @@
-alias jks="jekyll serve -w & guard && fg"
+alias jks="jekyll serve -w & bundle exec guard && fg"

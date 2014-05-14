@@ -4,4 +4,6 @@ exclude:
  - Gemfile.lock
  - Guardfile
  - sketch-off-landing.sublime-project
+ - sketch-off-landing.sublime-workspace
  - README.md
+ - deploy.sh
