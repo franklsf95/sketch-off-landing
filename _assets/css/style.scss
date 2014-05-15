@@ -6,8 +6,6 @@ $lightblue: #27bbff;
 $gray: #2b2b2b;
 $white: #fff;
 
-
-
 @mixin scr($media) {
   @if $media == xs {
     @media (max-width: $grid-float-breakpoint-max) { @content; }
@@ -74,6 +72,25 @@ $white: #fff;
 // --------------------
 $border-ptg: 13%;
 
+.home-container {
+    // .navbar {
+    //     .navbar-brand { color: $white; }
+    //     .navbar-nav > li > a { color: $white; }
+    //     .navbar-toggle {
+    //         border-color: $white;
+    //         .icon-bar { background-color: $white; }
+    //     }
+    // }
+    h1 {
+        text-transform: uppercase;
+        text-align: right;
+        font-weight: 500;
+        color: $white;
+        position: absolute;
+        right: 6%;
+    }
+}
+
 .intro {
     height: 700px;
     background-image: url("../img/banner.jpg");
@@ -81,14 +98,6 @@ $border-ptg: 13%;
     background-position: center 20%;
 }
 
-h1 {
-    text-transform: uppercase;
-    text-align: right;
-    font-weight: 500;
-    color: $white;
-    position: absolute;
-    right: 6%;
-}
 .introducing {
     font-size: 80px;
     top: 240px;
@@ -217,6 +226,7 @@ $iw: 204px;
     h2 {
         color: $red;
         font-weight: 300;
+        @include scr(md) { max-width: 160px; }
     }
 }
 
@@ -239,52 +249,29 @@ $iw: 204px;
 // ----------------------------
 //   Campus Ambassador Page
 // ----------------------------
-.cap-container {
-    background-color: $blue;
-    color: $white;
-    .navbar {
-        .navbar-brand { color: $white; }
-        .navbar-nav > li > a { color: $white; }
-        .navbar-toggle {
-            border-color: $white;
-            .icon-bar { background-color: $white; }
-        }
-    }
+.email {
+    font-family: "HelveticaNeue-CondensedBold", inherit;
 }
 
-$want-sz: 280px;
-.want {
-    background-image: url("../img/want.png");
+.map {
+    background-image: url("../img/map.png");
     background-size: 100%;
-    height: $want-sz;
-    width: $want-sz;
-    border: 2px $white solid;
-
-    margin: 140px auto 40px auto;
-
-    padding-top: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 80px;
-    line-height: 72px;
-    font-weight: 100;
-
-    color: $white;
+    background-repeat: no-repeat;
+    height: 450px;
+    @include scr(xs) { height: 300px; }
 }
 
 .cap-intro {
-    margin-top: 0;
-    text-align: center;
-
+    color: $red;
     h1 {
-        font-family: Sketchica, inherit;
         font-size: 54px;
-        letter-spacing: 3px;
     }
     p {
-        margin-top: 40px;
-        margin-bottom: 80px;
-        font-weight: 100;
+        margin-top: 30px;
+        font-weight: 200;
+    }
+    .want-in {
+        font-size: 24px;
     }
 }
 
@@ -299,6 +286,10 @@ $join-r: 584 / 1037;
     width: 746px;
     margin: 0 auto;
     margin-bottom: 40px;
+    @include scr(xs) {
+        height: 210px;
+        width: 373px;
+    }
 }
 
 .join-container {
@@ -306,9 +297,6 @@ $join-r: 584 / 1037;
         color: $red;
         font-size: 18px;
         font-weight: 200;
-        .email {
-            font-family: "HelveticaNeue-CondensedBold", inherit;
-        }
     }
 }
 

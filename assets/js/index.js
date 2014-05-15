@@ -5,9 +5,7 @@
     mode: 'fade',
     controls: false,
     pager: false,
-    auto: true,
-    pause: 3000,
-    autoHover: true
+    pause: 3000
   });
 
   base_url = 'http://inception-landing.herokuapp.com';

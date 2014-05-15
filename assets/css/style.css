@@ -30,19 +30,19 @@
   text-align: center;
   color: #e64c3c; }
 
-.intro {
-  height: 700px;
-  background-image: url("../img/banner.jpg");
-  background-size: 100%;
-  background-position: center 20%; }
-
-h1 {
+.home-container h1 {
   text-transform: uppercase;
   text-align: right;
   font-weight: 500;
   color: white;
   position: absolute;
   right: 6%; }
+
+.intro {
+  height: 700px;
+  background-image: url("../img/banner.jpg");
+  background-size: 100%;
+  background-position: center 20%; }
 
 .introducing {
   font-size: 80px;
@@ -152,6 +152,9 @@ h1 {
   .feature-box h2 {
     color: #e64c3c;
     font-weight: 300; }
+    @media (min-width: 768px) {
+      .feature-box h2 {
+        max-width: 160px; } }
 
 @media (max-width: 767px) {
   .img-iphone {
@@ -171,44 +174,27 @@ h1 {
 
   .box-2, .box-4 {
     top: 340px; } }
-.cap-container {
-  background-color: #277fff;
-  color: white; }
-  .cap-container .navbar .navbar-brand {
-    color: white; }
-  .cap-container .navbar .navbar-nav > li > a {
-    color: white; }
-  .cap-container .navbar .navbar-toggle {
-    border-color: white; }
-    .cap-container .navbar .navbar-toggle .icon-bar {
-      background-color: white; }
+.email {
+  font-family: "HelveticaNeue-CondensedBold", inherit; }
 
-.want {
-  background-image: url("../img/want.png");
+.map {
+  background-image: url("../img/map.png");
   background-size: 100%;
-  height: 280px;
-  width: 280px;
-  border: 2px white solid;
-  margin: 140px auto 40px auto;
-  padding-top: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 80px;
-  line-height: 72px;
-  font-weight: 100;
-  color: white; }
+  background-repeat: no-repeat;
+  height: 450px; }
+  @media (max-width: 767px) {
+    .map {
+      height: 300px; } }
 
 .cap-intro {
-  margin-top: 0;
-  text-align: center; }
+  color: #e64c3c; }
   .cap-intro h1 {
-    font-family: Sketchica, inherit;
-    font-size: 54px;
-    letter-spacing: 3px; }
+    font-size: 54px; }
   .cap-intro p {
-    margin-top: 40px;
-    margin-bottom: 80px;
-    font-weight: 100; }
+    margin-top: 30px;
+    font-weight: 200; }
+  .cap-intro .want-in {
+    font-size: 24px; }
 
 .join-columns {
   background-image: url("../img/join.png");
@@ -217,10 +203,12 @@ h1 {
   width: 746px;
   margin: 0 auto;
   margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    .join-columns {
+      height: 210px;
+      width: 373px; } }
 
 .join-container p {
   color: #e64c3c;
   font-size: 18px;
   font-weight: 200; }
-  .join-container p .email {
-    font-family: "HelveticaNeue-CondensedBold", inherit; }

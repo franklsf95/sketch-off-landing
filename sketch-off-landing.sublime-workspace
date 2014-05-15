@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"bgr",
+				"bgr:n	background-repeat:no-repeat"
+			],
+			[
 				"pos",
 				"pos:a	position:absolute"
 			],
@@ -434,32 +438,35 @@
 	},
 	"file_history":
 	[
-		"/Users/luans/sketch-off-landing/deploy.sh",
-		"/Users/luans/sketch-off-landing/_config.yml",
-		"/Users/luans/sketch-off-landing/_site/deploy.sh",
-		"/Users/luans/sketch-off-landing/_assets/js/index.coffee",
-		"/Users/luans/sketch-off-landing/_assets/css/style.scss",
 		"/Users/luans/sketch-off-landing/_includes/navbar.html",
 		"/Users/luans/sketch-off-landing/index.html",
+		"/Users/luans/sketch-off-landing/_assets/css/style.scss",
+		"/Users/luans/sketch-off-landing/.init.sh",
+		"/Users/luans/sketch-off-landing/campus-ambassador/index.html",
+		"/Users/luans/sketch-off-landing/_site/campus-ambassador/index.html",
+		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_print.scssc",
+		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_pager.scssc",
+		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_component-animations.scssc",
+		"/Users/luans/sketch-off-landing/_config.yml",
+		"/Users/luans/sketch-off-landing/deploy.sh",
+		"/Users/luans/sketch-off-landing/_site/deploy.sh",
+		"/Users/luans/sketch-off-landing/_assets/js/index.coffee",
 		"/Users/luans/sketch-off-landing/_layouts/default.html",
 		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_breadcrumbs.scssc",
 		"/Users/luans/sketch-off-landing/assets/css/font/glyphicons-halflings-regular.svg",
 		"/Users/luans/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Users/luans/sketch-off-landing/join/index.html",
 		"/Users/luans/Downloads/Nikita/1.m3u",
-		"/Users/luans/sketch-off-landing/campus-ambassador/index.html",
 		"/Users/luans/sketch-off-landing/contact/index.html",
 		"/Users/luans/Downloads/pc2-9.2.3/README",
 		"/Users/luans/sketch-off-landing/_assets/css/bootstrap/_variables.scss",
 		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_variables.scssc",
 		"/Users/luans/sketch-off-landing/_assets/css/bootstrap/_glyphicons.scss",
 		"/Users/luans/sketch-off-landing/_assets/css/bootstrap.scss",
-		"/Users/luans/sketch-off-landing/.init.sh",
 		"/Users/luans/sketch-off-landing/_assets/css/bootstrap/_navbar.scss",
 		"/Users/luans/sketch-off-landing/_includes/footer.html",
 		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_navbar.scssc",
 		"/Users/luans/sketch-off-landing/.sass-cache/742e678d5ea3da9ff186529187b7a8d84ddc9da0/style.scssc",
-		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_component-animations.scssc",
 		"/Users/luans/delta-epsilon/.gitignore",
 		"/Users/luans/delta-epsilon/config/initializers/facebook_koala.rb",
 		"/Users/luans/.zsh_history",
@@ -558,10 +565,7 @@
 		"/Users/luans/luans-cs154-2014/p2bomb/disasm.txt",
 		"/Users/luans/luans-cs154-2014/notes/next",
 		"/Users/luans/Downloads/SimplePush/simplepush.php",
-		"/Users/luans/a.cpp",
-		"/Users/luans/a.c",
-		"/Users/luans/a.s",
-		"/Users/luans/luans-cs154-2014/hw3/b.c"
+		"/Users/luans/a.cpp"
 	],
 	"find":
 	{
@@ -811,16 +815,28 @@
 		"selected_items":
 		[
 			[
+				"index",
+				"index.html"
+			],
+			[
+				"capinde",
+				"campus-ambassador/index.html"
+			],
+			[
+				"nav",
+				"_includes/navbar.html"
+			],
+			[
+				"sty",
+				"_assets/css/style.scss"
+			],
+			[
 				"defaul",
 				"_layouts/default.html"
 			],
 			[
 				"scs",
 				"_assets/css/style.scss"
-			],
-			[
-				"nav",
-				"_includes/navbar.html"
 			],
 			[
 				"varia",
@@ -857,10 +873,6 @@
 			[
 				"campi",
 				"campus-ambassador/index.html"
-			],
-			[
-				"sty",
-				"_assets/css/style.scss"
 			],
 			[
 				"footer",
@@ -1313,14 +1325,6 @@
 			[
 				"delta",
 				"config/initializers/delta_epsilon_constants.rb"
-			],
-			[
-				"userscontro",
-				"app/controllers/users_controller.rb"
-			],
-			[
-				"loge",
-				"app/models/log_event.rb"
 			]
 		],
 		"width": 0.0
