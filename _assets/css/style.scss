@@ -225,8 +225,24 @@ $iw: 204px;
     color: $gray;
     h2 {
         color: $red;
+        font-size: 20px;
+        line-height: 28px;
         font-weight: 300;
         @include scr(md) { max-width: 160px; }
+    }
+    .icon {
+        min-height: 50px;
+        @include scr(xs) { padding-top: 10px; }
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+        padding-left: 70px;
+    }
+    .icon-share { background-image: url("../img/icon-share.png"); }
+    .icon-camera { background-image: url("../img/icon-camera.png"); }
+    .icon-eye     { background-image: url("../img/icon-eye.png"); }
+    .icon-sketches { background-image: url("../img/icon-sketches.png"); }
+    .emph {
+        font-weight: 500;
     }
 }
 

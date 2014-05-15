@@ -151,10 +151,30 @@
   color: #2b2b2b; }
   .feature-box h2 {
     color: #e64c3c;
+    font-size: 20px;
+    line-height: 28px;
     font-weight: 300; }
     @media (min-width: 768px) {
       .feature-box h2 {
         max-width: 160px; } }
+  .feature-box .icon {
+    min-height: 50px;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    padding-left: 70px; }
+    @media (max-width: 767px) {
+      .feature-box .icon {
+        padding-top: 10px; } }
+  .feature-box .icon-share {
+    background-image: url("../img/icon-share.png"); }
+  .feature-box .icon-camera {
+    background-image: url("../img/icon-camera.png"); }
+  .feature-box .icon-eye {
+    background-image: url("../img/icon-eye.png"); }
+  .feature-box .icon-sketches {
+    background-image: url("../img/icon-sketches.png"); }
+  .feature-box .emph {
+    font-weight: 500; }
 
 @media (max-width: 767px) {
   .img-iphone {
