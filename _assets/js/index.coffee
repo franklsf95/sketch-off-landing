@@ -2,7 +2,7 @@ slider = $('.bxslider').bxSlider
     mode: 'fade'
     controls: false
     pager: false
-    # auto: true
+    auto: true
     pause: 3000
 
 base_url = 'http://inception-landing.herokuapp.com'

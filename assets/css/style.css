@@ -42,7 +42,8 @@
   height: 700px;
   background-image: url("../img/banner.jpg");
   background-size: 100%;
-  background-position: center 20%; }
+  background-position: center 20%;
+  position: relative; }
 
 .introducing {
   font-size: 80px;

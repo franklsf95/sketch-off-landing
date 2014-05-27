@@ -5,6 +5,7 @@
     mode: 'fade',
     controls: false,
     pager: false,
+    auto: true,
     pause: 3000
   });
 
