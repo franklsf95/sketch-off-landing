@@ -77,54 +77,75 @@ $white: #fff;
 $border-ptg: 13%;
 
 .home-container {
-    // .navbar {
-    //     .navbar-brand { color: $white; }
-    //     .navbar-nav > li > a { color: $white; }
-    //     .navbar-toggle {
-    //         border-color: $white;
-    //         .icon-bar { background-color: $white; }
-    //     }
-    // }
     h1 {
         text-transform: uppercase;
-        text-align: right;
         font-weight: 500;
         color: $white;
-        position: absolute;
-        right: 6%;
+        @include scr(md) {
+            position: absolute;
+            right: 6%;
+            text-align: right;
+        }
+    }
+}
+
+@include scr(xs) {
+    .home-container {
+        .navbar {
+            .navbar-brand { color: $white; }
+            .navbar-nav > li > a { color: $white; }
+            .navbar-toggle {
+                border-color: $white;
+                .icon-bar { background-color: $white; }
+            }
+        }
+    }
+    h1 {
+        padding-left: 40px;
+        margin-top: 5px;
+    }
+    .description {
+        padding-left: 40px;
+        font-size: 24px;
+        font-weight: 300;
+    }
+    .intro {
+        height: 400px;
+        background-color: $red;
     }
 }
 
 .intro {
-    height: 700px;
-    background-image: url("../img/banner.jpg");
-    background-size: 100%;
-    background-position: center 20%;
     position: relative;
-}
-
-.introducing {
-    font-size: 80px;
-    top: 240px;
-}
-.you {
-    font-size: 92px;
-    top: 320px;
-}
-
-.description {
     color: $white;
-    font-size: 28px;
-    text-align: right;
-    font-weight: 300;
+}
 
-    position: absolute;
-    top: 440px;
-    right: 6%;
+@include scr(md) {
+    .intro {
+        height: 700px;
+        background-image: url("../img/banner.jpg");
+        background-size: 100%;
+        background-position: center 20%;
+    }
+    .introducing {
+        font-size: 80px;
+        top: 240px;
+    }
+    .you {
+        font-size: 92px;
+        top: 320px;
+    }
+    .description {
+        position: absolute;
+        top: 440px;
+        right: 6%;
+        font-size: 28px;
+        text-align: right;
+        font-weight: 300;
+    }
 }
 
 .more {
-    color: $white;
     font-weight: 100;
     font-size: 24px;
     margin: 0 auto;
@@ -136,7 +157,6 @@ $border-ptg: 13%;
 
 .main-title {
     font-size: 60px;
-    color: $white;
     position: absolute;
     top: 400px;
     right: $border-ptg;
