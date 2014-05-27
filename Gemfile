@@ -1,10 +1,6 @@
 source 'https://rubygems.org'
 
 group :development do
-  gem 'jekyll'
-
-  gem 'guard-sass'
-  gem 'guard-coffeescript'
-
+  gem 'jekyll', '~> 2.0'
   gem 'guard-livereload'
 end
