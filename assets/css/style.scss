@@ -18,6 +18,16 @@ $white: #fff;
     @media (min-width: $grid-float-breakpoint) { @content; }
   }
 }
+@mixin nav-color($color) {
+    .navbar {
+        .navbar-brand { color: $color; }
+        .navbar-nav > li > a { color: $color; }
+        .navbar-toggle {
+            border-color: $color;
+            .icon-bar { background-color: $color; }
+        }
+    }
+}
 
 @font-face {
     font-family: Sketchica;
@@ -87,18 +97,12 @@ $border-ptg: 13%;
             text-align: right;
         }
     }
+    .navbar-nav > li > a { color: $white; }
 }
 
 @include scr(xs) {
     .home-container {
-        .navbar {
-            .navbar-brand { color: $white; }
-            .navbar-nav > li > a { color: $white; }
-            .navbar-toggle {
-                border-color: $white;
-                .icon-bar { background-color: $white; }
-            }
-        }
+        @include nav-color($white);
     }
     h1 {
         padding-left: 40px;
@@ -122,9 +126,10 @@ $border-ptg: 13%;
 
 @include scr(md) {
     .intro {
-        height: 700px;
+        max-height: 1080px;
+        height: 100vh;
         background-image: url("../img/banner.jpg");
-        background-size: 100%;
+        background-size: cover;
         background-position: center 20%;
     }
     .introducing {

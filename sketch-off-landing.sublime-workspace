@@ -219,13 +219,41 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2419,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/css/style.scss",
+			"settings":
+			{
+				"buffer_size": 6494,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 1935,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 119.0,
+		"height": 375.0,
 		"selected_items":
 		[
+			[
+				"rena",
+				"File: Rename"
+			],
 			[
 				"ssphp",
 				"Set Syntax: PHP"
@@ -280,10 +308,6 @@
 			],
 			[
 				"rename",
-				"File: Rename"
-			],
-			[
-				"rena",
 				"File: Rename"
 			],
 			[
@@ -419,7 +443,7 @@
 				"Set Syntax: Racket"
 			]
 		],
-		"width": 561.0
+		"width": 507.0
 	},
 	"console":
 	{
@@ -442,19 +466,30 @@
 	},
 	"file_history":
 	[
-		"/Users/luans/sketch-off-landing/index.html",
-		"/Users/luans/sketch-off-landing/_assets/css/style.scss",
-		"/Users/luans/sketch-off-landing/_assets/js/index.coffee",
+		"/Users/luans/SkyDrive/Desktop/STAT_23400/hw7.tex",
+		"/Users/luans/sketch-off-landing/assets/css/_vendor.scss",
+		"/Users/luans/sketch-off-landing/assets/css/_animate.scss",
+		"/Users/luans/sketch-off-landing/assets/css/vendor.scss",
+		"/Users/luans/sketch-off-landing/assets/css/style.scss",
+		"/Users/luans/sketch-off-landing/_config.yml",
+		"/Users/luans/sketch-off-landing/Gemfile",
 		"/Users/luans/sketch-off-landing/.init.sh",
+		"/Users/luans/sketch-off-landing/Guardfile",
+		"/Users/luans/sketch-off-landing/_assets/css/style.scss",
+		"/Users/luans/sketch-off-landing/.gitignore",
+		"/Users/luans/sketch-off-landing/Gemfile.lock",
+		"/Users/luans/sketch-off-landing/_assets/js/index.coffee",
+		"/Users/luans/sketch-off-landing/index.html",
+		"/Users/luans/sketch-off-landing/_assets/css/bootstrap.scss",
+		"/Users/luans/sketch-off-landing/campus-ambassador/index.html",
+		"/Users/luans/sketch-off-landing/.sass-cache/742e678d5ea3da9ff186529187b7a8d84ddc9da0/style.scssc",
 		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_responsive-utilities.scssc",
 		"/Users/luans/sketch-off-landing/_site/campus-ambassador/index.html",
 		"/Users/luans/sketch-off-landing/_site/assets/css/font/glyphicons-halflings-regular.svg",
 		"/Users/luans/sketch-off-landing/_includes/navbar.html",
-		"/Users/luans/sketch-off-landing/campus-ambassador/index.html",
 		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_print.scssc",
 		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_pager.scssc",
 		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_component-animations.scssc",
-		"/Users/luans/sketch-off-landing/_config.yml",
 		"/Users/luans/sketch-off-landing/deploy.sh",
 		"/Users/luans/sketch-off-landing/_site/deploy.sh",
 		"/Users/luans/sketch-off-landing/_layouts/default.html",
@@ -468,11 +503,9 @@
 		"/Users/luans/sketch-off-landing/_assets/css/bootstrap/_variables.scss",
 		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_variables.scssc",
 		"/Users/luans/sketch-off-landing/_assets/css/bootstrap/_glyphicons.scss",
-		"/Users/luans/sketch-off-landing/_assets/css/bootstrap.scss",
 		"/Users/luans/sketch-off-landing/_assets/css/bootstrap/_navbar.scss",
 		"/Users/luans/sketch-off-landing/_includes/footer.html",
 		"/Users/luans/sketch-off-landing/.sass-cache/97d728e6a8574618925c68bc2b13bb56441bcf84/_navbar.scssc",
-		"/Users/luans/sketch-off-landing/.sass-cache/742e678d5ea3da9ff186529187b7a8d84ddc9da0/style.scssc",
 		"/Users/luans/delta-epsilon/.gitignore",
 		"/Users/luans/delta-epsilon/config/initializers/facebook_koala.rb",
 		"/Users/luans/.zsh_history",
@@ -560,16 +593,7 @@
 		"/Users/luans/grape-on-rack/config/boot.rb",
 		"/Users/luans/grape-on-rack/api/api.rb",
 		"/Users/luans/grape-on-rack/public/index.html",
-		"/Users/luans/grape-on-rack/config/application.rb",
-		"/Users/luans/grape-on-rack/Gemfile",
-		"/Users/luans/grape-on-rack/config/environment.rb",
-		"/Users/luans/delta-epsilon/public/index.html",
-		"/Users/luans/SkyDrive/Desktop/Resume/latex/CV_201404.tex",
-		"/Users/luans/SkyDrive/Desktop/Resume/latex/CV_20140",
-		"/Users/luans/metrahub/README.md",
-		"/Users/luans/phase6.c",
-		"/Users/luans/luans-cs154-2014/p2bomb/disasm.txt",
-		"/Users/luans/luans-cs154-2014/notes/next"
+		"/Users/luans/grape-on-rack/config/application.rb"
 	],
 	"find":
 	{
@@ -587,6 +611,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$border-ptg",
 			"border-ptg",
 			"$gray-text",
 			"#fff",
@@ -759,8 +784,240 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2419,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								436,
+								439
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 26.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "assets/css/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6494,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2104,
+								2104
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2057.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_layouts/default.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1935,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								714,
+								714
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 131.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -819,16 +1076,28 @@
 		"selected_items":
 		[
 			[
+				"defa",
+				"_layouts/default.html"
+			],
+			[
+				"index",
+				"index.html"
+			],
+			[
+				"coffee",
+				"_assets/js/index.coffee"
+			],
+			[
+				"stylescss",
+				"_assets/css/style.scss"
+			],
+			[
 				"sty",
 				"_assets/css/style.scss"
 			],
 			[
 				"indexco",
 				"_assets/js/index.coffee"
-			],
-			[
-				"index",
-				"index.html"
 			],
 			[
 				"capinde",
@@ -888,10 +1157,6 @@
 			],
 			[
 				"def",
-				"_layouts/default.html"
-			],
-			[
-				"defa",
 				"_layouts/default.html"
 			],
 			[
@@ -1321,14 +1586,6 @@
 			[
 				"initializer/dev",
 				"config/initializers/devise.rb"
-			],
-			[
-				"omni",
-				"app/controllers/omniauth_callbacks_controller.rb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
 			]
 		],
 		"width": 0.0
