@@ -87,92 +87,51 @@ $white: #fff;
 $border-ptg: 13%;
 
 .home-container {
-    h1 {
-        text-transform: uppercase;
-        font-weight: 500;
-        color: $white;
-        @include scr(md) {
-            position: absolute;
-            right: 6%;
-            text-align: right;
-        }
-    }
     .navbar-nav > li > a { color: $white; }
 }
 
-@include scr(xs) {
-    .home-container {
-        @include nav-color($white);
-    }
-    h1 {
-        padding-left: 40px;
-        margin-top: 5px;
-    }
-    .description {
-        padding-left: 40px;
-        font-size: 24px;
-        font-weight: 300;
-    }
-    .intro {
-        height: 400px;
-        background-color: $red;
-    }
-}
-
 .intro {
-    position: relative;
-    color: $white;
+    max-height: 1080px;
+    height: 100vh;
+    background-color: #e64c3c;
+    // background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center 20%;
 }
 
-@include scr(md) {
-    .intro {
-        max-height: 1080px;
-        height: 100vh;
-        background-image: url("../img/banner.jpg");
-        background-size: cover;
-        background-position: center 20%;
-    }
-    .introducing {
-        font-size: 80px;
-        top: 240px;
-    }
-    .you {
-        font-size: 92px;
-        top: 320px;
-    }
-    .description {
-        position: absolute;
-        top: 440px;
-        right: 6%;
-        font-size: 28px;
-        text-align: right;
-        font-weight: 300;
-    }
-}
-
-.more {
-    font-weight: 100;
-    font-size: 24px;
+.logo {
+    width: 220px;
+    height: 220px;
+    background-image: url("../img/logo_large.png");
+    background-size: cover;
     margin: 0 auto;
-
-    position: absolute;
-    bottom: 10px;
-    left: 42%;
 }
 
-.main-title {
-    font-size: 60px;
-    position: absolute;
-    top: 400px;
-    right: $border-ptg;
-    font-family: Sketchica, inherit;
+.brand-title {
+    font-family: Sketchica;
+    color: $white;
+    font-size: 72px;
+    text-align: center;
+}
+
+.description {
+    p {
+        text-align: center;
+        color: white;
+        font-family: "HelveticaNeue-Thin";
+        letter-spacing: 0.2px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .emph {
+        font-family: "HelveticaNeue-Medium";
+    }
 }
 
 .sign-up {
     width: 320px;
-    position: absolute;
-    left: $border-ptg;
-    bottom: 120px;
+    margin: 0 auto;
+    margin-top: 20px;
 
     * { border: none; }
     input {
@@ -204,13 +163,12 @@ $border-ptg: 13%;
 }
 
 .coming-soon {
+    margin-top: 20px;
     height: 47px;
     width: 160px;
     background-image: url("../img/coming-soon.png");
     background-size: 100%;
-    position: absolute;
-    left: $border-ptg;
-    bottom: 60px;
+    margin: 0 auto;
 }
 
 .features {
