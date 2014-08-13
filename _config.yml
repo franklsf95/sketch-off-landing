@@ -10,3 +10,5 @@ exclude:
 sass:
     sass_dir: assets/css
     style: :compressed
+coffee:
+    style: :compressed

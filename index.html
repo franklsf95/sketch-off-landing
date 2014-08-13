@@ -3,56 +3,56 @@ layout: default
 identifier: home
 scripts:
  - jquery.bxslider.min
+ - jquery.mask.min
  - index
 ---
-<div class="intro">
-    {% include navbar.html %}
-    <div class="logo"></div>
-    <h1 class="brand-title">SketchOff</h1>
-    <div class="description">
-        <p>Oh yeah.<br />We are here, shamelessly <br />To hype the already overheated social frenzy</p>
-        <p>But here’s the catch:<br /><span class="emph">Your stories are told by your friends<br />And theirs by you.</span></p>
+<section class="intro" id="intro">
+    <div class="container-fluid">
+        <div class="logo">
+            <h1 class="brand-title">SketchOff</h1>
+        </div>
+        <div class="description">
+            <p>Oh yeah<br />We are here, shamelessly <br />To hype the already overheated social frenzy</p>
+            <p>But here’s the catch:<br /><span class="emph">Your stories are told by your friends<br />And theirs by you.</span></p>
+        </div>
+        <div class="sign-up">
+            <div class="input-group">
+                <span class="input-group-addon" id="input-prefix">+1</span>
+                <input type="text" class="form-control" id="input-text" placeholder="Phone number" />
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="btn-submit">Get link</button>
+                </span>
+            </div>
+            <div class="output" id="output"></div>
+        </div>
+        <a target="_blank" href="https://itunes.apple.com/us/app/sketchoff/id806820979?mt=8" id="appstore" class="appstore"></a>
+        <div class="android" id="android"></div>
     </div>
-    <!-- <div class="more">learn more</div> -->
-    <div class="sign-up">
-        <div class="input-group">
-            <input type="text" class="form-control" name="email" id="input-email" placeholder="Your Email address...">
-            <span class="input-group-btn">
-                <button class="btn btn-default" type="button" id="btn-sign-up">Sign Up</button>
-            </span>
+</section>
+<section class="features" id="features">
+    <div class="container-fluid">
+        <div class="col-md-3">
+            <div class="iphone">
+                <ul class="bxslider">
+                    <li><img src="/assets/img/screen-1.png" /></li>
+                    <li><img src="/assets/img/screen-2.png" /></li>
+                    <li><img src="/assets/img/screen-3.png" /></li>
+                </ul>
+            </div>
         </div>
-        <div class="output" id="output"></div>
-    </div>
-    <div class="coming-soon"></div>
-</div>
-<div class="features">
-    <div class="container">
-        <div class="iphone">
-          <ul class="bxslider">
-            <li><img src="/assets/img/screen-1.jpg" /></li>
-            <li><img src="/assets/img/screen-2.jpg" /></li>
-            <li><img src="/assets/img/screen-3.jpg" /></li>
-            <li><img src="/assets/img/screen-4.jpg" /></li>
-          </ul>
-        </div>
-        <div class="feature-box box-1 wow bounceInLeft">
-            <h2 class="icon icon-share">Share a Story</h2>
-            <p>Share your friends' dirts with <span class="emph">text sketch</span>. Broadcast the inside jokes and spread the laughter.</p>
-        </div>
-        <div class="feature-box box-2 wow bounceInLeft">
-            <h2 class="icon icon-camera">Don't Say Cheese</h2>
-            <p>Snap a quick shot of your friend, paste some sassy description, and share the <span class="emph">picture sketch</span> among the crew.</p>
-        </div>
-        <div class="feature-box box-3 wow bounceInRight">
-            <h2 class="icon icon-eye">See Different</h2>
-            <p>Ever curious about the other sides of your friend? Check out their SketchOff profiles and see what peculiar stories their friends have witnessed.</p>
-        </div>
-        <div class="feature-box box-4 wow bounceInRight">
-            <h2 class="icon icon-sketches">Keep it Rolling</h2>
-            <p>Is this sketch just classic? Or totally uncalled for? Vote <span class="glyphicon glyphicon-arrow-up"></span> or <span class="glyphicon glyphicon-arrow-down"></span> to say if you resonate with the sketch.</p>
+        <div class="col-md-3 col-md-offset-1 boxes">
+            <div class="feature-box" data-index="0">
+                <h2>Don't Say Cheese</h2>
+                <p>Snap a picture of your friend, paste a sassy caption, and share the sketch among the crew.</p>
+            </div>
+            <div class="feature-box" data-index="1">
+                <h2>Keep it Rolling</h2>
+                <p>Up or down the sketch to help move this sketch up or down in your friend’s profile!</p>
+            </div>
+            <div class="feature-box" data-index="2">
+                <h2>See Different</h2>
+                <p>Everyone’s profile is made up of sketches by their friends.</p>
+            </div>
         </div>
     </div>
-</div>
-<div class="signup"></div>
-
-
+</section>
