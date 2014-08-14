@@ -1,11 +1,12 @@
 ---
 ---
 modes = {
-    ANDROID: 0,
+    ADR: 0,
     iOS: 1
 }
 submit_mode = modes.iOS
-base_url = 'http://inception-landing.herokuapp.com'
+base_url = 'http://0.0.0.0:3000'
+# base_url = 'http://inception-landing.herokuapp.com'
 $input = $('#input-text')
 $output = $('#output')
 $prefix = $('#input-prefix')
@@ -16,7 +17,7 @@ $boxes = $('.boxes').children()
 
 renderMode = ->
     uaStr = navigator.userAgent
-    if submit_mode == modes.ANDROID
+    if submit_mode == modes.ADR
         $btnSubmit.html 'Sign up'
         $input.attr 'placeholder', 'Email address'
         $input.val ''
@@ -53,19 +54,19 @@ $boxes.click ->
 
 $('#appstore').click (e) ->
     # if iOS, allow link
-    if submit_mode == modes.ANDROID
+    if submit_mode == modes.ADR
         submit_mode = modes.iOS
         e.preventDefault()
     renderMode()
 
 $('#android').click ->
-    # if ANDROID, do nothing
+    # if ADR, do nothing
     if submit_mode == modes.iOS
-        submit_mode = modes.ANDROID
+        submit_mode = modes.ADR
     renderMode()
 
 $btnSubmit.click ->
-    if submit_mode == modes.ANDROID
+    if submit_mode == modes.ADR
         submitEmail()
     else if submit_mode == modes.iOS
         submitPhone()
@@ -82,9 +83,10 @@ submitPhone = ->
         data:
             number: $input.cleanVal()
         error: (xhr) ->
-            err = $.parseJSON xhr.responseText
-            console.log err
-            $output.html 'Error occured when we attempted to text you.'
+            if xhr.status == 429
+                $output.html 'Rate limit reached. Please try again later.'
+            else
+                $output.html 'Error occured when we attempted to text you.'
             $output.slideDown()
         success: (xhr) ->
             $output.html 'Great! Now download SketchOff on your phone!'

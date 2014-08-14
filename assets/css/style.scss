@@ -243,6 +243,7 @@ $wd: 300px;
 .iphone {
     background-image: url("../img/iphone-frame.png");
     background-size: 100%;
+    background-repeat: no-repeat;
     width: $wd;
     height: $wd * 1574 / 750;
     margin-right: 80px;
