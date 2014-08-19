@@ -84,7 +84,7 @@ submitPhone = ->
             number: $input.cleanVal()
         error: (xhr) ->
             if xhr.status == 429
-                $output.html 'Rate limit reached. Please try again later.'
+                $output.html 'Whoa slow down... Try again in a minute.'
             else
                 $output.html 'Error occured when we attempted to text you.'
             $output.slideDown()
