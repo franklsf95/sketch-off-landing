@@ -1,0 +1,40 @@
+---
+layout: default
+identifier: sketch
+scripts:
+ - jquery.bxslider.min
+ - jquery.mask.min
+ - index
+---
+<section class="welcome" id="welcome">
+    <div class="container-fluid">
+        <div class="logo">
+            <h1 class="brand-title">SketchOff</h1>
+        </div>
+        <div class="col-md-4 col-xs-12 sketch-main">
+            <img src="http://s3-us-west-2.amazonaws.com/sketch-off-dev/1/20140727_135528676_p.jpg" alt="So hot" class="sketch-img">
+            <div class="sketch-overlay">
+                <div class="down-count vote-count">3 <span class="down-arrow arrow"></span></div>
+                <div class="up-count vote-count"><span class="up-arrow arrow"></span> 12</div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-12 sketch-aside">
+            <div class="description">
+                <p>Oh yeah<br />We are here, shamelessly <br />To hype the already overheated social frenzy</p>
+                <p>But here’s the catch:<br /><span class="emph">Your stories are told by your friends<br />And theirs by you.</span></p>
+            </div>
+            <div class="sign-up">
+                <div class="input-group">
+                    <div class="input-group-addon">+1</div>
+                    <input type="text" class="form-control" id="input-text" placeholder="Phone number" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="btn-submit">Get link</button>
+                    </span>
+                </div>
+                <div class="output" id="output"></div>
+            </div>
+            <a target="_blank" href="https://itunes.apple.com/us/app/sketchoff/id806820979?mt=8" id="appstore" class="appstore"></a>
+            <div class="android" id="android"></div>
+        </div>
+    </div>
+</section>

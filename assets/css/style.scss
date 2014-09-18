@@ -119,7 +119,7 @@ $logo-sz: 100px;
     width: $logo-sz;
     height: $logo-sz;
     background-image: url("../img/sketch-off-logo_lg.png");
-    background-size: $logo-sz $logo-sz;
+    background-size: contain;
     background-repeat: no-repeat;
     padding: 28px 0 0 120px;
 }
@@ -355,5 +355,89 @@ $join-r: 584 / 1037;
         color: $red;
         font-size: 18px;
         font-weight: 200;
+    }
+}
+
+
+// ----------------------------
+//   Sketch Page
+// ----------------------------
+.sketch-container {
+    .welcome {
+        max-height: 1080px;
+        min-height: 580px;
+        @media screen and (min-height: 580px) {
+            height: 100vh;
+        }
+        background-color: $red;
+        @include nav-color($white);
+        .navbar-brand { display: none; }
+        padding-top: 10px;
+    }
+    $s-logo-size: 60px;
+    .logo {
+        width: $s-logo-size;
+        height: $s-logo-size;
+        padding: 2px 0 0 ($s-logo-size + 20px);
+        margin-top: 40px;
+    }
+    .brand-title {
+        font-size: 36px;
+    }
+    .sketch-main {
+        margin-top: 50px;
+    }
+    $sketch-size: 440px;
+    .sketch-img {
+        width: $sketch-size;
+        height: $sketch-size;
+        box-shadow: 1px 2px 6px 0px #333;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .sketch-overlay {
+        width: $sketch-size;
+        height: $sketch-size;
+        background-image: url("../img/sketch-frame.png");
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .vote-count {
+        font-family: "HelveticaNeue-CondensedBold", inherit;
+        color: white;
+        font-size: 48px;
+        position: absolute;
+        bottom: 12px;
+    }
+    .up-count {
+        right: 30px;
+    }
+    .down-count {
+        left: 30px;
+    }
+    .up-arrow {
+        background-image: url("../img/arrow-up.png");
+        right: 60px;
+    }
+    .down-arrow {
+        background-image: url("../img/arrow-down.png");
+        left: 60px;
+    }
+    .arrow {
+        width: 48px;
+        height: 28px;
+        background-size: contain;
+        position: absolute;
+        bottom: 20px;
+    }
+    .sketch-aside {
+        margin-top: 100px;
+        margin-left: 60px;
+    }
+    .description p {
+        font-size: 20px;
     }
 }

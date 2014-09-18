@@ -7,6 +7,7 @@ exclude:
  - sketch-off-landing.sublime-workspace
  - README.md
  - deploy.sh
+ - mask.psd
 sass:
     sass_dir: assets/css
     style: :compressed
