@@ -3,6 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>SketchOff - Who are you, in the eyes of your friends?</title>
+        {% if page.noindex %}
+            <meta name="robots" content="noindex, nofollow">
+        {% endif %}
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
         <meta name="apple-itunes-app" content="app-id=806820979"/>
         <meta name="description" content="Build your friends' profiles, and let them build yours. SketchOff is where friends share funny stories about each other and where you learn other sides of your friends.">
