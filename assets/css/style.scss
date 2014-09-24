@@ -122,6 +122,9 @@ $logo-sz: 100px;
     background-size: contain;
     background-repeat: no-repeat;
     padding: 28px 0 0 120px;
+    a:hover, a:active {
+        text-decoration: none;
+    }
 }
 
 .brand-title {
