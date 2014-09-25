@@ -366,42 +366,49 @@ $join-r: 584 / 1037;
 //   Sketch Page
 // ----------------------------
 .sketch-container {
+    $sketch-size: 440px;
     .welcome {
-        max-height: 1080px;
+        max-height: 1280px;
         min-height: 580px;
-        @media screen and (min-height: 580px) {
+        @media (min-width: 1000px) {
             height: 100vh;
         }
         background-color: $red;
         @include nav-color($white);
         .navbar-brand { display: none; }
-        padding-top: 10px;
+        padding: 10px 0 20px 0;
     }
     $s-logo-size: 60px;
     .logo {
         width: $s-logo-size;
         height: $s-logo-size;
         padding: 2px 0 0 ($s-logo-size + 20px);
-        margin-top: 40px;
+        @include scr(md) { margin: 40px 0; }
+        @include scr(xs) { margin: 20px 0; }
     }
     .brand-title {
         font-size: 36px;
     }
     .sketch-main {
-        margin-top: 50px;
+        max-height: $sketch-size;
+        min-height: 320px;
+        max-width: $sketch-size;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        padding: 0;
     }
-    $sketch-size: 440px;
     .sketch-img {
-        width: $sketch-size;
-        height: $sketch-size;
+        width: 100%;
+        height: auto;
         box-shadow: 1px 2px 6px 0px #333;
         position: absolute;
         top: 0;
         left: 0;
     }
     .sketch-overlay {
-        width: $sketch-size;
-        height: $sketch-size;
+        width: 100%;
+        height: 100%;
         background-image: url("../img/sketch-frame.png");
         background-size: contain;
         position: absolute;
@@ -411,34 +418,37 @@ $join-r: 584 / 1037;
     .vote-count {
         font-family: "HelveticaNeue-CondensedBold", inherit;
         color: white;
-        font-size: 48px;
+        @media (min-width: $sketch-size + 1px) { font-size: 48px; }
+        @media (max-width: $sketch-size) { font-size: 40px; }
         position: absolute;
         bottom: 12px;
     }
     .up-count {
-        right: 30px;
+        right: 8%;
     }
     .down-count {
-        left: 30px;
+        left: 8%;
     }
     .up-arrow {
         background-image: url("../img/arrow-up.png");
-        right: 60px;
+        right: 133%;
     }
     .down-arrow {
         background-image: url("../img/arrow-down.png");
-        left: 60px;
+        left: 150%;
     }
     .arrow {
-        width: 48px;
-        height: 28px;
+        @media (min-width: $sketch-size + 1px) { width: 48px; height: 28px; }
+        @media (max-width: $sketch-size) { width: 36px; height: 21px; }
         background-size: contain;
         position: absolute;
-        bottom: 20px;
+        bottom: 33%;
     }
     .sketch-aside {
-        margin-top: 100px;
-        margin-left: 60px;
+        @media (min-width: 1000px) {
+            margin-top: 60px;
+            margin-left: 60px;
+        }
     }
     .description p {
         font-size: 20px;
