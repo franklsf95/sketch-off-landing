@@ -1,13 +1,15 @@
 ---
 ---
-@import "vendor";
-// @import "onepage";
-
 $red: #e64c3c;
 $blue: #277fff;
 $lightblue: #08baf9;
 $gray: #2b2b2b;
 $white: #fff;
+
+$input-border-focus: $red;
+
+@import "vendor";
+// @import "onepage";
 
 @mixin scr($media) {
   @if $media == xs {
@@ -118,10 +120,10 @@ $logo-sz: 100px;
 .logo {
     width: $logo-sz;
     height: $logo-sz;
-    background-image: url("../img/sketch-off-logo_lg.png");
+    background-image: url("../img/sketch-off-logo-lg.png");
     background-size: contain;
     background-repeat: no-repeat;
-    padding: 28px 0 0 120px;
+    padding: 28px 0 0 ($logo-sz + 20px);
     a:hover, a:active {
         text-decoration: none;
     }
@@ -136,6 +138,7 @@ $logo-sz: 100px;
     @include scr(md) {
         font-size: 48px;
     }
+    margin: 20px 0 0 0;
 }
 
 .description {
@@ -361,96 +364,4 @@ $join-r: 584 / 1037;
     }
 }
 
-
-// ----------------------------
-//   Sketch Page
-// ----------------------------
-.sketch-container {
-    $sketch-size: 440px;
-    .welcome {
-        max-height: 1280px;
-        min-height: 580px;
-        @media (min-width: 1000px) {
-            height: 100vh;
-        }
-        background-color: $red;
-        @include nav-color($white);
-        .navbar-brand { display: none; }
-        padding: 10px 0 20px 0;
-    }
-    $s-logo-size: 60px;
-    .logo {
-        width: $s-logo-size;
-        height: $s-logo-size;
-        padding: 2px 0 0 ($s-logo-size + 20px);
-        @include scr(md) { margin: 40px 0; }
-        @include scr(xs) { margin: 20px 0; }
-    }
-    .brand-title {
-        font-size: 36px;
-    }
-    .sketch-main {
-        max-height: $sketch-size;
-        min-height: 320px;
-        max-width: $sketch-size;
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
-        padding: 0;
-    }
-    .sketch-img {
-        width: 100%;
-        height: auto;
-        box-shadow: 1px 2px 6px 0px #333;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .sketch-overlay {
-        width: 100%;
-        height: 100%;
-        background-image: url("../img/sketch-frame.png");
-        background-size: contain;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .vote-count {
-        font-family: "HelveticaNeue-CondensedBold", inherit;
-        color: white;
-        @media (min-width: $sketch-size + 1px) { font-size: 48px; }
-        @media (max-width: $sketch-size) { font-size: 40px; }
-        position: absolute;
-        bottom: 12px;
-    }
-    .up-count {
-        right: 8%;
-    }
-    .down-count {
-        left: 8%;
-    }
-    .up-arrow {
-        background-image: url("../img/arrow-up.png");
-        right: 133%;
-    }
-    .down-arrow {
-        background-image: url("../img/arrow-down.png");
-        left: 150%;
-    }
-    .arrow {
-        @media (min-width: $sketch-size + 1px) { width: 48px; height: 28px; }
-        @media (max-width: $sketch-size) { width: 36px; height: 21px; }
-        background-size: contain;
-        position: absolute;
-        bottom: 33%;
-    }
-    .sketch-aside {
-        @media (min-width: 1000px) {
-            margin-top: 60px;
-            margin-left: 60px;
-        }
-    }
-    .description p {
-        font-size: 20px;
-    }
-}
+@import "sketch";

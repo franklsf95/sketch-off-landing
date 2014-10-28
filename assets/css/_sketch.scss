@@ -1,0 +1,148 @@
+// ----------------------------
+//   Sketch Page
+// ----------------------------
+.appstore-link {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    .appstore {
+        border: 1px solid $red;
+        height: 50px;
+        width: 100px;
+    }
+}
+.sketch-container {
+    background-color: $white;
+    background: url("../img/sketch-bg.png");
+    @media (min-width: 1000px) {
+        height: 100vh;
+    }
+    .welcome {
+        max-height: 1280px;
+        min-height: 580px;
+        @include nav-color($white);
+        .navbar-brand { display: none; }
+        padding: 10px 0 20px 0;
+    }
+    $s-logo-size: 80px;
+    .logo {
+        width: $s-logo-size;
+        height: $s-logo-size;
+        background-image: url("../img/sketch-off-logo-shadow.png");
+        padding: 2px 0 0 ($s-logo-size + 0px);
+        @include scr(md) { margin: 40px 0; }
+        @include scr(xs) { margin: 20px 0; }
+    }
+    .brand-title {
+        font-size: 24px;
+        color: $red;
+    }
+    .brand-description {
+        width: 400px;
+        margin: 0;
+        font-size: 13px;
+    }
+    .sketch-card {
+        border: 2px solid $red;
+        background-color: $white;
+        margin: 0 auto;
+        padding: 6px 0 0 30px;
+        @include scr(md) {
+            width: 760px;
+            height: 400px;
+        }
+    }
+    $sketch-size: 340px;
+    .sketch-main {
+        max-height: $sketch-size;
+        min-height: 320px;
+        max-width: $sketch-size;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+        padding: 0;
+    }
+    .sketch-img {
+        width: 100%;
+        height: auto;
+        box-shadow: 1px 2px 6px 0px #333;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .sketch-overlay {
+        width: 100%;
+        height: 100%;
+        background-image: url("../img/sketch-frame.png");
+        background-size: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .vote-count {
+        font-family: "HelveticaNeue-CondensedBold", inherit;
+        color: white;
+        @media (min-width: $sketch-size + 1px) { font-size: 48px; }
+        @media (max-width: $sketch-size) { font-size: 40px; }
+        position: absolute;
+        bottom: 12px;
+    }
+    .up-count {
+        right: 8%;
+    }
+    .down-count {
+        left: 8%;
+    }
+    .up-arrow {
+        background-image: url("../img/arrow-up.png");
+        right: 133%;
+    }
+    .down-arrow {
+        background-image: url("../img/arrow-down.png");
+        left: 150%;
+    }
+    .arrow {
+        @media (min-width: $sketch-size + 1px) { width: 48px; height: 28px; }
+        @media (max-width: $sketch-size) { width: 36px; height: 21px; }
+        background-size: contain;
+        position: absolute;
+        bottom: 33%;
+    }
+    .sketch-aside {
+        padding: 0;
+        @include scr(md) { margin: 20px 0 0 20px; }
+    }
+    .sign-up {
+        margin: 30px 0;
+        width: 320px;
+        .input-group {
+            border: 2px solid $red;
+            padding: 0;
+        }
+        .input-group-addon {
+            color: $red;
+        }
+        .input-group-btn button {
+            margin: 0;
+            width: 70px;
+            background-color: $red;
+            &:hover, &:focus {
+                background-color: darken($red, 5%);
+            }
+        }
+    }
+    .output {
+        color: $red;
+    }
+    .letter {
+        width: 300px;
+        p {
+            font-size: 16px;
+            line-height: 18px;
+            color: #38454F;
+            .emphasize {
+                font-weight: 700;
+            }
+        }
+    }
+}
