@@ -5,11 +5,12 @@
     position: absolute;
     top: 40px;
     right: 40px;
-    .appstore {
-        border: 1px solid $red;
-        height: 50px;
-        width: 100px;
-    }
+}
+.appstore {
+    border: 1px solid $red;
+    height: 50px;
+    width: 100px;
+    margin: 0;
 }
 .sketch-container {
     background-color: $white;
@@ -22,7 +23,10 @@
         min-height: 580px;
         @include nav-color($white);
         .navbar-brand { display: none; }
-        padding: 10px 0 20px 0;
+        @include scr(md) { padding: 10px 0 20px 0; }
+    }
+    .container-fluid {
+        @include scr(xs) { padding: 0; }
     }
     $s-logo-size: 80px;
     .logo {
@@ -43,23 +47,35 @@
         font-size: 13px;
     }
     .sketch-card {
-        border: 2px solid $red;
         background-color: $white;
-        margin: 0 auto;
-        padding: 6px 0 0 30px;
         @include scr(md) {
+            border: 2px solid $red;
+            padding: 6px 0 0 30px;
+            margin: 0 auto;
             width: 760px;
             height: 400px;
+        }
+        @include scr(xs) {
+            width: 100%;
+            padding: 0;
+            margin-right: 0;
         }
     }
     $sketch-size: 340px;
     .sketch-main {
-        max-height: $sketch-size;
-        min-height: 320px;
-        max-width: $sketch-size;
-        width: 100%;
         height: auto;
-        margin: 20px 0;
+        @include scr(md) {
+            max-height: $sketch-size;
+            max-width: $sketch-size;
+            width: 100%;
+            margin: 20px 0;
+        }
+        @include scr(xs) {
+            max-height: $sketch-size * 1.5;
+            max-width: $sketch-size * 1.5;
+            width: 100vw;
+            margin-bottom: 20px;
+        }
         padding: 0;
     }
     .sketch-img {
@@ -111,6 +127,7 @@
     .sketch-aside {
         padding: 0;
         @include scr(md) { margin: 20px 0 0 20px; }
+        @include scr(xs) { padding: 10px 20px; }
     }
     .sign-up {
         margin: 30px 0;
@@ -133,6 +150,10 @@
     }
     .output {
         color: $red;
+    }
+    .inline-appstore {
+        @include scr(md) { display: none; }
+        margin: 20px 0;
     }
     .letter {
         width: 300px;
