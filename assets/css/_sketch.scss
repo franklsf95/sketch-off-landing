@@ -1,18 +1,19 @@
 // ----------------------------
 //   Sketch Page
 // ----------------------------
-.appstore-link {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-}
-.appstore {
-    border: 1px solid $red;
-    height: 50px;
-    width: 100px;
-    margin: 0;
-}
+
 .sketch-container {
+    .appstore-link {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    .appstore {
+        border: 1px solid $red;
+        height: 50px;
+        width: 100px;
+        margin: 0;
+    }
     background-color: $white;
     background: url("../img/sketch-bg.png");
     @media (min-width: 1000px) {
@@ -98,8 +99,7 @@
     .vote-count {
         font-family: "HelveticaNeue-CondensedBold", inherit;
         color: white;
-        @media (min-width: $sketch-size + 1px) { font-size: 48px; }
-        @media (max-width: $sketch-size) { font-size: 40px; }
+        font-size: 40px;
         position: absolute;
         bottom: 12px;
     }
@@ -118,8 +118,8 @@
         left: 150%;
     }
     .arrow {
-        @media (min-width: $sketch-size + 1px) { width: 48px; height: 28px; }
-        @media (max-width: $sketch-size) { width: 36px; height: 21px; }
+        width: 34px;
+        height: 20px;
         background-size: contain;
         position: absolute;
         bottom: 33%;
