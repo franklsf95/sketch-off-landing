@@ -47,16 +47,17 @@
         margin: 0;
         font-size: 13px;
     }
+    $card-width: 840px;
     .sketch-card {
         background-color: $white;
-        @include scr(md) {
+        @media (min-width: $card-width + 1px) {
             border: 2px solid $red;
             padding: 6px 0 0 30px;
             margin: 0 auto;
-            width: 760px;
+            width: $card-width;
             height: 400px;
         }
-        @include scr(xs) {
+        @media (max-width: $card-width) {
             width: 100%;
             padding: 0;
             margin-right: 0;
@@ -126,12 +127,12 @@
     }
     .sketch-aside {
         padding: 0;
-        @include scr(md) { margin: 20px 0 0 20px; }
+        @include scr(md) { margin: 20px 0 0 30px; }
         @include scr(xs) { padding: 10px 20px; }
     }
     .sign-up {
         margin: 20px 0;
-        width: 320px;
+        width: 110%;
         .input-group {
             border: 2px solid $red;
             padding: 0;
@@ -141,7 +142,7 @@
         }
         .input-group-btn button {
             margin: 0;
-            width: 70px;
+            width: 130px;
             background-color: $red;
             &:hover, &:focus {
                 background-color: darken($red, 5%);
@@ -156,7 +157,7 @@
         margin: 20px 0;
     }
     .letter {
-        @include scr(md) { width: 320px; }
+        @include scr(md) { width: 340px; }
         p {
             font-size: 16px;
             line-height: 18px;
