@@ -10,6 +10,9 @@ scripts:
 <div class="appstore-link hidden-xs">
     <a target="_blank" href="https://itunes.apple.com/us/app/sketchoff/id806820979?mt=8" id="appstore" class="appstore"></a>
 </div>
+<a class="share share-fb" href="#" onclick="FB.ui({method: 'share', href: 'https://api.sketch-off.com/sketches/10-drafts-with-1gb-psd-file-now-you-say-you-want-to-redo'}, function(r){});"></a>
+<a class="share share-twitter" href="#" onclick="window.open('http://twitter.com/intent/tweet?text=hello&url=http://sketch-off.com', '', 'height=300,width=500')"></a>
+<a class="share share-email" href="mailto:?subject=SketchOff&body=https://api.sketch-off.com/sketches/10-drafts-with-1gb-psd-file-now-you-say-you-want-to-redo"></a>
 <section class="welcome" id="welcome">
     <div class="container-fluid">
         <div class="logo hidden-xs">
@@ -51,3 +54,11 @@ scripts:
         </div>
     </div>
 </section>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=173131616224910&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>

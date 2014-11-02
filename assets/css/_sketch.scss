@@ -14,6 +14,26 @@
         width: 100px;
         margin: 0;
     }
+    .share {
+        position: absolute;
+        left: 48px;
+        height: 48px;
+        width: 48px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .share-fb {
+        top: 200px;
+        background-image: url("../img/icon-facebook.png");
+    }
+    .share-twitter {
+        top: 280px;
+        background-image: url("../img/icon-twitter.png");
+    }
+    .share-email {
+        top: 360px;
+        background-image: url("../img/icon-email.png");
+    }
     background-color: $white;
     background: url("../img/sketch-bg.png");
     @media (min-width: 1000px) {
