@@ -26,7 +26,7 @@ renderMode = ->
         $appstore.removeClass 'active'
         $prefix.hide()
     else if submit_mode == modes.iOS
-        $btnSubmit.html 'Get link'
+        $btnSubmit.html 'Get download link'
         $input.attr 'placeholder', 'Phone number'
         $input.mask '(000) 000-0000'
         $input.val ''

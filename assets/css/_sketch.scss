@@ -168,6 +168,9 @@
                 background-color: darken($red, 5%);
             }
         }
+        input {
+            @include placeholder();  // default
+        }
     }
     .output {
         color: $red;
