@@ -3,18 +3,23 @@
 // ----------------------------
 
 .sketch-container {
-    .appstore-link {
+    .ios-link {
         position: absolute;
-        top: 40px;
-        right: 40px;
+        top: 60px;
+        right: 60px;
     }
-    .appstore {
-        border: 1px solid $red;
+    .ios {
+        @extend .hidden-xs;
         height: 50px;
         width: 100px;
+        display: block;
+        border: 1px solid $red;
         margin: 0;
+        background-image: url("../img/iOS.png");
+        background-size: 100%;
     }
     .share {
+        @extend .hidden-xs;
         position: absolute;
         left: 48px;
         height: 48px;
@@ -55,12 +60,13 @@
         height: $s-logo-size;
         background-image: url("../img/sketch-off-logo-shadow.png");
         padding: 2px 0 0 ($s-logo-size + 0px);
-        @include scr(md) { margin: 40px 0; }
+        @include scr(md) { margin: 20px 0; }
         @include scr(xs) { margin: 20px 0; }
     }
     .brand-title {
         font-size: 24px;
         color: $red;
+        margin: 16px 0 4px 0;
     }
     .brand-description {
         width: 400px;
@@ -73,7 +79,7 @@
         @media (min-width: $card-width + 1px) {
             border: 2px solid $red;
             padding: 6px 0 0 30px;
-            margin: 0 auto;
+            margin: 150px auto 0 auto;
             width: $card-width;
             height: 400px;
         }

@@ -74,6 +74,9 @@ $input-border-focus: $red;
 
 .footer {
     padding: 30px 0 15px 0;
+    .logo {
+        display: none;
+    }
 }
 
 .footer-text {
@@ -98,6 +101,9 @@ $input-border-focus: $red;
         background-color: $blue;
         .brand-title {
             color: $white;
+        }
+        .logo {
+            display: block;
         }
     }
     .copyright-text {
