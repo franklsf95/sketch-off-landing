@@ -11,6 +11,11 @@ scripts:
         <div class="logo">
             <h1 class="brand-title">SketchOff</h1>
         </div>
+        <div class="">
+            <a target="_blank" href="https://itunes.apple.com/us/app/sketchoff/id806820979?mt=8">
+                <div class="appstore" id="appstore"></div>
+            </a>
+        </div>
         <div class="headline">Capture your friends&rsquo; legendary moments</div>
         <div class="sign-up">
             <div class="input-group">
@@ -22,35 +27,22 @@ scripts:
             </div>
             <div class="output" id="output"></div>
         </div>
-        <a target="_blank" href="https://itunes.apple.com/us/app/sketchoff/id806820979?mt=8" id="appstore" class="appstore"></a>
-        <div class="android" id="android"></div>
         <div class="mockup"></div>
     </div>
 </section>
-<section class="features" id="features">
+<section class="sketches" id="hot-sketches">
     <div class="container-fluid">
-        <div class="col-md-3">
-            <div class="iphone">
-                <ul class="bxslider">
-                    <li><img src="/assets/img/screen-1.png" /></li>
-                    <li><img src="/assets/img/screen-2.png" /></li>
-                    <li><img src="/assets/img/screen-3.png" /></li>
-                </ul>
+        <div class="row">
+            {% for sketch in site.data.sketches %}
+            <div class="sketch">
+                <img class="sketch-img" src="http://s3-us-west-2.amazonaws.com/sketch-off/{{ sketch.url }}" alt="{{ sketch.content }}" />
             </div>
+            {% endfor %}
         </div>
-        <div class="col-md-3 col-md-offset-1 boxes">
-            <div class="feature-box" data-index="0">
-                <h2>Don't Say Cheese</h2>
-                <p>Snap a picture of your friend, paste a sassy caption, and share the sketch among the crew.</p>
-            </div>
-            <div class="feature-box" data-index="1">
-                <h2>Keep it Rolling</h2>
-                <p>Up or down the sketch to help move this sketch up or down in your friend’s profile!</p>
-            </div>
-            <div class="feature-box" data-index="2">
-                <h2>See Different</h2>
-                <p>Everyone’s profile is made up of sketches by their friends.</p>
-            </div>
-        </div>
+    </div>
+</section>
+<section class="storyboard">
+    <div class="container-fluid">
+        <p>Where your storyboard is put together by your friends</p>
     </div>
 </section>

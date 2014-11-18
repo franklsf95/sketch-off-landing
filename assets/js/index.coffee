@@ -72,7 +72,6 @@ $btnSubmit.click ->
         submitPhone()
 
 $ ->
-    renderMode()
     $main = $('.sketch-main')
     $main.css 'height': $main.width()
 

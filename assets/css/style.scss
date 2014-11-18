@@ -73,7 +73,7 @@ $input-border-focus: $red;
 }
 
 .footer {
-    margin: 30px auto 15px auto;
+    padding: 30px 0 15px 0;
 }
 
 .footer-text {
@@ -93,6 +93,29 @@ $input-border-focus: $red;
 
 .home-container {
     .navbar-nav > li > a { color: $white; }
+
+    .footer {
+        background-color: $blue;
+        .brand-title {
+            color: $white;
+        }
+    }
+    .copyright-text {
+        display: none;
+    }
+    .footer-text {
+        float: right;
+        margin: 20px 40px;
+        color: $white;
+        font-size: 20px;
+        font-weight: 100;
+        a {
+            color: $white;
+        }
+        .split {
+            padding: 0 12px;
+        }
+    }
 }
 
 .container-fluid {
@@ -102,20 +125,20 @@ $input-border-focus: $red;
 }
 
 .intro {
-    max-height: 1080px;
-    min-height: 580px;
-    @media screen and (min-height: 580px) {
-        height: 100vh;
-    }
+    @include scr(xs) { min-height: 560px; }
+    @include scr(md) { min-height: 600px; }
     background: url("../img/travel.jpg") $red no-repeat;
+    background-position: right center;
     background-size: cover;
     padding-top: 20px;
+    position: relative;
 }
 
 $logo-sz: 60px;
 .logo {
     width: $logo-sz;
     height: $logo-sz;
+    float: left;
     background: url("../img/sketch-off-logo-lg.png") no-repeat;
     background-size: contain;
     padding-left: ($logo-sz + 20px);
@@ -125,25 +148,27 @@ $logo-sz: 60px;
 }
 
 .mockup {
-    width: 598px;
-    height: 636px;
+    height: 538px;
+    width: 615px;
     background: url("../img/mockup-1.png") no-repeat;
     background-size: contain;
+    background-clip: contnet-box;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: -180px;
     @media (max-width: 1200px) { visibility: hidden; }
 }
 
 .brand-title {
     font-weight: 300;
-    color: $white;
+    margin-top: 12px;
     @include scr(xs) {
         font-size: 36px;
+        color: $white;
     }
     @include scr(md) {
         font-size: 36px;
-        padding-top: 12px;
+        color: $red;
     }
 }
 
@@ -154,7 +179,7 @@ $logo-sz: 60px;
     line-height: 60px;
     @include scr(xs) {
         width: 100%;
-        margin-top: 80px;
+        margin-top: 140px;
     }
     @include scr(md) {
         width: 560px;
@@ -163,10 +188,14 @@ $logo-sz: 60px;
 }
 
 .sign-up {
-    @include scr(xs) { width: 100%; }
-    @include scr(md) { width: 400px; }
-    margin-top: 50px;
-
+    @include scr(xs) {
+        width: 100%;
+        margin-top: 40px;
+    }
+    @include scr(md) {
+        width: 400px;
+        margin-top: 60px;
+    }
     * {
         border: none;
         border-radius: 0;
@@ -217,21 +246,22 @@ $logo-sz: 60px;
 }
 
 .appstore, .android {
-    margin-top: 30px;
-    height: 60px;
-    width: 120px;
+    height: 47px;
+    width: 122px;
     background-size: 100%;
     float: left;
     cursor: pointer;
 }
 
 .appstore {
+    @extend .hidden-xs;
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    background-color: rgba(255,255,255,.01);
     background-image: url("../img/Appstore.png");
     &:hover {
         background-image: url("../img/Appstore_hover.png");
-    }
-    &:active, &.active {
-        background-image: url("../img/Appstore_hit.png");
     }
 }
 
@@ -246,79 +276,34 @@ $logo-sz: 60px;
     }
 }
 
-.features {
-    max-height: 1080px;
-    min-height: 500px;
+.sketches {
+    padding: 40px 0;
+    background-color: #fefefe;
+}
+
+.sketch {
+    float: left;
+    margin: 20px 20px;
+}
+
+$sketch-img-size: 280px;
+.sketch-img {
+    width: $sketch-img-size;
+    height: $sketch-img-size;
+    @extend .img-rounded;
+}
+
+.storyboard {
+    @include scr(md) { height: 480px; }
+    min-height: 200px;
     background-color: $lightblue;
     position: relative;
-    font-weight: 300;
-    @include scr(md) {
-        .row {
-            margin-top: 80px;
-        }
-    }
-    padding-top: 40px;
-    @media screen and (min-height: 580px) {
-        height: 100vh;
-    }
-}
-
-$wd: 300px;
-.iphone {
-    background-image: url("../img/iphone-frame.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    width: $wd;
-    height: $wd * 1574 / 750;
-    margin-right: 80px;
-    float: left;
-}
-
-$iw: 254px;
-.bx-viewport {
-  top: 92px;
-  left: 21px;
-  width: $iw !important;
-}
-
-.bxslider > li {
-    left: 0;
-    > img {
-        width: 100%;
-        height: $iw / 640 * 1136;
-    }
-}
-
-@include scr(xs) {
-    .iphone { display: none; }
-}
-
-.feature-box {
-    @include scr(xs) {
-        margin-top: 20px;
-        width: 280px;
-    }
-    h2 {
+    p {
+        color: $white;
         font-size: 32px;
-        font-family: "HelveticaNeue-UltraLight", inherit;
         font-weight: 100;
-        margin: 10px 0 6px 0;
-    }
-    color: $white;
-    font-size: 20px;
-    font-family: "HelveticaNeue-Thin", inherit;
-    font-weight: 200;
-    cursor: pointer;
-    @include scr(md) {
-        margin-top: 28px;
-        width: 320px;
-        padding: 12px;
-        border: 1px solid $lightblue;
-        transition: border 0.5s ease-out;
-        -webkit-transition: border 0.5s ease-out;
-        &.active {
-            border: 1px solid rgba(255,255,255,0.8);
-        }
+        position: absolute;
+        bottom: 40px;
     }
 }
 
