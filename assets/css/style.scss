@@ -108,7 +108,8 @@ $input-border-focus: $red;
         margin: 20px 40px;
         color: $white;
         font-size: 20px;
-        font-weight: 100;
+        font-family: "HelveticaNeue-Thin", inhreit;
+        font-weight: 200;
         a {
             color: $white;
         }
@@ -134,34 +135,24 @@ $input-border-focus: $red;
     position: relative;
 }
 
-$logo-sz: 60px;
+$logo-sz: 100px;
 .logo {
     width: $logo-sz;
     height: $logo-sz;
     float: left;
-    background: url("../img/sketch-off-logo-lg.png") no-repeat;
+    background: url("../img/sketch-off-logo-shadow.png") no-repeat;
     background-size: contain;
-    padding-left: ($logo-sz + 20px);
+    padding-left: 108px;
     a:hover, a:active {
         text-decoration: none;
     }
 }
 
-.mockup {
-    height: 538px;
-    width: 615px;
-    background: url("../img/mockup-1.png") no-repeat;
-    background-size: contain;
-    background-clip: contnet-box;
-    position: absolute;
-    bottom: 0;
-    right: -180px;
-    @media (max-width: 1200px) { visibility: hidden; }
-}
-
 .brand-title {
     font-weight: 300;
-    margin-top: 12px;
+    margin-top: 30px;
+    font-family: "HelveticaNeue-Thin", inhreit;
+    font-weight: 200;
     @include scr(xs) {
         font-size: 36px;
         color: $white;
@@ -170,6 +161,18 @@ $logo-sz: 60px;
         font-size: 36px;
         color: $red;
     }
+}
+
+.mockup {
+    height: 500px;
+    width: 428px;
+    background: url("../img/mockup-1.png") no-repeat;
+    background-size: contain;
+    background-clip: contnet-box;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    @media (max-width: 1200px) { visibility: hidden; }
 }
 
 .headline {
@@ -301,7 +304,8 @@ $sketch-img-size: 280px;
     p {
         color: $white;
         font-size: 32px;
-        font-weight: 100;
+        font-family: "HelveticaNeue-Thin", inhreit;
+        font-weight: 200;
         position: absolute;
         bottom: 40px;
     }
